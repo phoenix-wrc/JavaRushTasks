@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8a9c2848-0864-419d-ba1c-a0669c6ee00f" name="Default" comment="" />
+    <list default="true" id="8a9c2848-0864-419d-ba1c-a0669c6ee00f" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/moonlander/Условие.jrtc" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/moonlander/Условие.jrtc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/racer/Direction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/racer/GameObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/racer/PlayerCar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/racer/RacerGame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/racer/RoadMarking.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/racer/ShapeMatrix.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/racer/road/RoadManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/racer/road/RoadObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/racer/road/RoadObjectType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/racer/road/Thorn.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/racer/Условие.jrtc" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/racer/Условие.jrtc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/spaceinvaders/gameobjects/Bullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/spaceinvaders/gameobjects/Bullet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaRushPlugin.properties" beforeDir="false" afterPath="$PROJECT_DIR$/JavaRushPlugin.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out.log" beforeDir="false" afterPath="$PROJECT_DIR$/out.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/8_Games_jar/8.Games.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/8_Games_jar/8.Games.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/8.Games/META-INF/8.Games.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/spaceinvaders/gameobjects/Bullet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/spaceinvaders/gameobjects/Bullet.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,9 +34,6 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="FavoritesManager">
-    <favorites_list name="JavaRushTasks" />
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -25,7 +43,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/JavaRushTasks" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -43,7 +61,6 @@
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -75,7 +92,7 @@
       <recent name="com.javarush.games.racer.road" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.FlappyBirdGame">
+  <component name="RunManager" selected="Application.SnakeGame">
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
       <option name="TESTING_TYPE" value="0" />
@@ -348,6 +365,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SpaceInvadersGame" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.javarush.games.spaceinvaders.SpaceInvadersGame" />
+      <module name="8.Games" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.javarush.games.minesweeper.MinesweeperGame" />
       <module name="8.Games" />
@@ -368,7 +392,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+    <configuration default="true" type="JetRunConfigurationType">
       <module name="JavaRushTasks" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
@@ -381,7 +405,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
       <option name="filePath" />
       <option name="vmParameters" />
       <option name="alternativeJrePath" />
@@ -440,20 +464,9 @@
       <item itemvalue="Application.PaintForGameSprite" />
       <item itemvalue="Application.RacerGame" />
       <item itemvalue="Application.SnakeGame" />
+      <item itemvalue="Application.SpaceInvadersGame" />
       <item itemvalue="Application.Unnamed" />
     </list>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -490,14 +503,18 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="677" y="179" key="#MinesweeperGame" timestamp="1579696547189">
+    <state x="882" y="161" key="#Plugins" timestamp="1590036993530">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="677" y="179" key="#MinesweeperGame/0.0.1920.1040@0.0.1920.1040" timestamp="1579696547189" />
+    <state x="882" y="161" key="#Plugins/0.0.1920.1040@0.0.1920.1040" timestamp="1590036993530" />
     <state x="400" y="195" key="#RacerGame" timestamp="1582262531952">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="400" y="195" key="#RacerGame/0.0.1920.1040@0.0.1920.1040" timestamp="1582262531952" />
+    <state x="925" y="124" key="#SpaceInvadersGame" timestamp="1587093622203">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="925" y="124" key="#SpaceInvadersGame/0.0.1920.1040@0.0.1920.1040" timestamp="1587093622203" />
     <state x="677" y="179" key="#Unnamed" timestamp="1582880238659">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -506,50 +523,46 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="277" y="277" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582703823766" />
-    <state x="115" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583117189208">
+    <state x="454" y="167" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587093611473">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="115" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583117189208" />
+    <state x="454" y="167" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587093611473" />
     <state x="586" y="237" key="#com.intellij.ide.util.MemberChooser" timestamp="1582896541827">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="586" y="237" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1582896541827" />
-    <state x="363" y="280" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1583394940471">
+    <state x="363" y="280" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1587093597261">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="363" y="280" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583394940471" />
+    <state x="363" y="280" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587093597261" />
+    <state x="250" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1589904296703">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="250" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589904296703" />
     <state x="277" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1582699506603">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="277" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582699506603" />
-    <state x="279" y="268" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1581391541440">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="279" y="268" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581391541440" />
     <state x="534" y="259" key="FileChooserDialogImpl" timestamp="1584153368087">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="534" y="259" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1584153368087" />
-    <state x="31" y="0" key="FileDocumentManager.FileCacheConflict" timestamp="1580022874043">
+    <state width="1081" height="138" key="GridCell.Tab.0.bottom" timestamp="1587103321229">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="31" y="0" key="FileDocumentManager.FileCacheConflict/0.0.1920.1040@0.0.1920.1040" timestamp="1580022874043" />
-    <state width="1067" height="140" key="GridCell.Tab.0.bottom" timestamp="1583662429250">
+    <state width="1081" height="138" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587103321229" />
+    <state width="1081" height="138" key="GridCell.Tab.0.center" timestamp="1587103321229">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1067" height="140" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583662429250" />
-    <state width="1067" height="140" key="GridCell.Tab.0.center" timestamp="1583662429250">
+    <state width="1081" height="138" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587103321229" />
+    <state width="1081" height="138" key="GridCell.Tab.0.left" timestamp="1587103321229">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1067" height="140" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583662429250" />
-    <state width="1067" height="140" key="GridCell.Tab.0.left" timestamp="1583662429250">
+    <state width="1081" height="138" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587103321229" />
+    <state width="1081" height="138" key="GridCell.Tab.0.right" timestamp="1587103321229">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1067" height="140" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583662429250" />
-    <state width="1067" height="140" key="GridCell.Tab.0.right" timestamp="1583662429250">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1067" height="140" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583662429250" />
+    <state width="1081" height="138" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587103321229" />
     <state width="1877" height="320" key="GridCell.Tab.1.bottom" timestamp="1582992968574">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -578,14 +591,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="25" y="126" width="998" height="734" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583395148592" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1581224104140">
+    <state x="267" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1589905019154">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1581224104140" />
-    <state x="470" y="320" key="com.intellij.ide.util.TipDialog" timestamp="1584153286300">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="470" y="320" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584153286300" />
+    <state x="267" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589905019154" />
     <state x="250" y="417" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1583637937955">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -594,18 +603,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1" y="32" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1584153374616" />
-    <state x="601" y="246" width="700" height="530" key="recent.locations.popup" timestamp="1581224123338">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="601" y="246" width="700" height="530" key="recent.locations.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1581224123338" />
     <state x="252" y="153" key="refactoring.ChangeSignatureDialog" timestamp="1581675544381">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="252" y="153" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581675544381" />
-    <state x="346" y="248" key="run.anything.popup" timestamp="1579694495273">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="346" y="248" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1579694495273" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1582778256004">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -633,11 +634,6 @@
           <url>file://$PROJECT_DIR$/8.Games/src/com/javarush/games/snake/Enemy.java</url>
           <line>46</line>
           <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/8.Games/src/com/javarush/games/racer/RacerGame.java</url>
-          <line>73</line>
-          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
