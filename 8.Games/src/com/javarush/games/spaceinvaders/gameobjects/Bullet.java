@@ -14,7 +14,7 @@ public class Bullet extends GameObject {
         super(x, y);
         setMatrix(ShapeMatrix.BULLET);
         if (direction == Direction.UP)
-            dy = -1;
+            dy = -3;
         else
             dy = 1;
         
