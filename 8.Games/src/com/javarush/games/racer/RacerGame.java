@@ -14,12 +14,25 @@ public class RacerGame extends Game {
 	}
 
 	private void drawField() {
+		for (int i = 0; i < WIDTH; i++) {
+			for (int j = 0; j < HEIGHT; j++) {
+				if(i == CENTER_X) {
+					setCellColor(i,j,Color.WHITE);
+				} else if(i < ROADSIDE_WIDTH) {
+					setCellColor(i,j,Color.GREEN);
+				} else if(i >= WIDTH - ROADSIDE_WIDTH) {
+					setCellColor(i,j,Color.GREEN);
+				} else {
+					setCellColor(i,j,Color.DIMGRAY);
+				}
 
+			}
+		}
 	}
 
 	@Override
 	public void initialize() {
-		showGrid(false);
+		showGrid(true);
 		setScreenSize(WIDTH,HEIGHT);
 
 		createGame();
