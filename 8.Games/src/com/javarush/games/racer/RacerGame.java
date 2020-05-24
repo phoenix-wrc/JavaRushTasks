@@ -5,9 +5,11 @@ import com.javarush.engine.cell.*;
 public class RacerGame extends Game {
 	public static final int WIDTH = 64, HEIGHT = 64, CENTER_X = WIDTH/2, ROADSIDE_WIDTH = 14;
 	private RoadMarking roadMarking;
+	private PlayerCar player;
 
 	private void createGame() {
 		roadMarking = new RoadMarking();
+		player = new PlayerCar();
 
 		drawScene();
 	}
@@ -15,6 +17,7 @@ public class RacerGame extends Game {
 	private void drawScene() {
 		drawField();
 		roadMarking.draw(this);
+		player.draw(this);
 	}
 
 	private void drawField() {

@@ -2,26 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a9c2848-0864-419d-ba1c-a0669c6ee00f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/racer/RoadMarking.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/racer/ShapeMatrix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/racer/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/racer/GameObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/racer/PlayerCar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/racer/RacerGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/racer/RacerGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/racer/Условие.jrtc" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/racer/Условие.jrtc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaRushPlugin.properties" beforeDir="false" afterPath="$PROJECT_DIR$/JavaRushPlugin.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out.log" beforeDir="false" afterPath="$PROJECT_DIR$/out.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/8_Games_jar/8.Games.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/8_Games_jar/8.Games.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/moonlander/Условие.jrtc" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/moonlander/Условие.jrtc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/racer/Direction.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/racer/PlayerCar.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/racer/RacerGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/racer/RacerGame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/racer/ShapeMatrix.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/racer/ShapeMatrix.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/racer/road/RoadManager.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/racer/road/RoadObject$1.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/racer/road/RoadObject.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/racer/road/RoadObjectType.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/racer/road/Thorn.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/racer/Условие.jrtc" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/racer/Условие.jrtc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -503,6 +496,10 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
+    <state x="552" y="178" width="816" height="729" key="#Intentions" timestamp="1590325384416">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" width="816" height="729" key="#Intentions/0.0.1920.1040@0.0.1920.1040" timestamp="1590325384416" />
     <state x="882" y="161" key="#Plugins" timestamp="1590036993530">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
