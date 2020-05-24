@@ -25,16 +25,22 @@ public class RacerGame extends Game {
 				} else {
 					setCellColor(i,j,Color.DIMGRAY);
 				}
-
 			}
 		}
 	}
 
 	@Override
 	public void initialize() {
-		showGrid(true);
+		showGrid(false);
 		setScreenSize(WIDTH,HEIGHT);
 
 		createGame();
+	}
+
+	@Override
+	public void setCellColor(int x, int y, Color color) {
+		if(x < WIDTH && x >= 0 && y < HEIGHT && y >= 0) {
+			super.setCellColor(x, y, color);
+		}
 	}
 }
