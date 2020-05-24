@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a9c2848-0864-419d-ba1c-a0669c6ee00f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/racer/RacerGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/racer/RacerGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/racer/GameObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/racer/Условие.jrtc" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/racer/Условие.jrtc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JavaRushPlugin.properties" beforeDir="false" afterPath="$PROJECT_DIR$/JavaRushPlugin.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out.log" beforeDir="false" afterPath="$PROJECT_DIR$/out.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/8_Games_jar/8.Games.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/8_Games_jar/8.Games.jar" afterDir="false" />
@@ -19,7 +19,6 @@
       <change beforePath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/racer/road/RoadObject.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/racer/road/RoadObjectType.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/racer/road/Thorn.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/racer/Условие.jrtc" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/racer/Условие.jrtc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -525,10 +524,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="454" y="167" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587093611473" />
-    <state x="586" y="237" key="#com.intellij.ide.util.MemberChooser" timestamp="1590321985731">
+    <state x="586" y="237" width="390" height="488" key="#com.intellij.ide.util.MemberChooser" timestamp="1590322914108">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="586" y="237" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1590321985731" />
+    <state x="586" y="237" width="390" height="488" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1590322914108" />
     <state x="363" y="280" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1587093597261">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
