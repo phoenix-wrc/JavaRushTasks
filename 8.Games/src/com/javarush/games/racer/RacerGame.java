@@ -4,13 +4,17 @@ import com.javarush.engine.cell.*;
 
 public class RacerGame extends Game {
 	public static final int WIDTH = 64, HEIGHT = 64, CENTER_X = WIDTH/2, ROADSIDE_WIDTH = 14;
+	private RoadMarking roadMarking;
 
 	private void createGame() {
+		roadMarking = new RoadMarking();
+
 		drawScene();
 	}
 
 	private void drawScene() {
 		drawField();
+		roadMarking.draw(this);
 	}
 
 	private void drawField() {
