@@ -1,16 +1,19 @@
 package com.javarush.games.racer;
 
 import com.javarush.engine.cell.*;
+import com.javarush.games.racer.road.RoadManager;
 
 public class RacerGame extends Game {
 	public static final int WIDTH = 64, HEIGHT = 64, CENTER_X = WIDTH/2, ROADSIDE_WIDTH = 14;
 	private RoadMarking roadMarking;
 	private PlayerCar player;
+	private RoadManager roadManager;
 
 	private void createGame() {
 		roadMarking = new RoadMarking();
 		player = new PlayerCar();
 		setTurnTimer(40);
+		roadManager = new RoadManager();
 
 		drawScene();
 	}
@@ -19,6 +22,7 @@ public class RacerGame extends Game {
 		drawField();
 		roadMarking.draw(this);
 		player.draw(this);
+		roadManager.draw(this);
 	}
 
 	private void moveAll()  {
