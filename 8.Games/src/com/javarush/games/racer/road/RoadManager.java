@@ -1,6 +1,7 @@
 package com.javarush.games.racer.road;
 
 import com.javarush.engine.cell.Game;
+import com.javarush.games.racer.PlayerCar;
 import com.javarush.games.racer.RacerGame;
 
 import java.util.ArrayList;
@@ -13,15 +14,13 @@ public class RoadManager {
 	private static final int FIRST_LANE_POSITION = 16;
 	private static final int FOURTH_LANE_POSITION = 44;
 	private List<RoadObject> items = new ArrayList<>();
-//
-//	private void deletePassedItems() {
-//		List<RoadObject> check = items;
-//		for (RoadObject roadObject : check) {
-//			if (roadObject.y >= RacerGame.HEIGHT) {
-//				items.remove(roadObject);
-//			}
-//		}
-//	}
+
+	public boolean checkCrush(PlayerCar car) {
+		for (RoadObject item: items) {
+			if(item.isCollision(car)) return true;
+		}
+		return false;
+	}
 
 	private void deletePassedItems() {
 		Iterator<RoadObject> iterator = items.iterator();
