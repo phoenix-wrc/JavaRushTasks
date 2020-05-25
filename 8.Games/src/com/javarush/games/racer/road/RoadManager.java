@@ -15,6 +15,7 @@ public class RoadManager {
 	private static final int FOURTH_LANE_POSITION = 44;
 	private static final int PLAYER_CAR_DISTANCE = 12;
 	private List<RoadObject> items = new ArrayList<>();
+	private int passedCarsCount = 0;
 
 	private void generateMovingCar(Game game) {
 		if(!isMovingCarExists() && game.getRandomNumber(100) < 10) {
@@ -58,7 +59,10 @@ public class RoadManager {
 		Iterator<RoadObject> iterator = items.iterator();
 		while (iterator.hasNext()) {
 			RoadObject item = iterator.next();
-			if (item.y >= RacerGame.HEIGHT) iterator.remove();
+			if (item.y >= RacerGame.HEIGHT){
+				if(item.type != RoadObjectType.THORN) passedCarsCount++;
+				iterator.remove();
+			}
 		}
 	}
 
@@ -78,9 +82,9 @@ public class RoadManager {
 	}
 
 	public void generateNewRoadObjects(Game game) {
-		generateThorn(game);
+		//generateThorn(game);
 		generateRegularCar(game);
-		generateMovingCar(game);
+		//generateMovingCar(game);
 	}
 
 	public void move(int boost) {
@@ -108,5 +112,9 @@ public class RoadManager {
 		if(type == RoadObjectType.THORN) return new Thorn(x,y);
 		else if(type == RoadObjectType.DRUNK_CAR) return new MovingCar(x,y);
 		else return new Car(type, x, y);
+	}
+
+	public int getPassedCarsCount() {
+		return passedCarsCount;
 	}
 }
