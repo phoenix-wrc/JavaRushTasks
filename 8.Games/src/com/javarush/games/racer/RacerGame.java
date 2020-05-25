@@ -5,9 +5,11 @@ import com.javarush.games.racer.road.RoadManager;
 
 public class RacerGame extends Game {
 	public static final int WIDTH = 64, HEIGHT = 64, CENTER_X = WIDTH/2, ROADSIDE_WIDTH = 14;
+	private static final int RACE_GOAL_CARS_COUNT = 40;
 	private RoadMarking roadMarking;
 	private PlayerCar player;
 	private RoadManager roadManager;
+	private FinishLine finishLine;
 	private boolean isGameStopped;
 
 	private void createGame() {
@@ -16,6 +18,7 @@ public class RacerGame extends Game {
 		setTurnTimer(40);
 		roadManager = new RoadManager();
 		isGameStopped = false;
+		finishLine = new FinishLine();
 
 		drawScene();
 	}
@@ -25,12 +28,14 @@ public class RacerGame extends Game {
 		roadMarking.draw(this);
 		player.draw(this);
 		roadManager.draw(this);
+		finishLine.draw(this);
 	}
 
 	private void moveAll()  {
 		roadMarking.move(player.speed);
 		player.move();
 		roadManager.move(player.speed);
+		finishLine.move(player.speed);
 	}
 
 	private void gameOver() {
