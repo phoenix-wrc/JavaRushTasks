@@ -8,12 +8,14 @@ public class RacerGame extends Game {
 	private RoadMarking roadMarking;
 	private PlayerCar player;
 	private RoadManager roadManager;
+	private boolean isGameStopped;
 
 	private void createGame() {
 		roadMarking = new RoadMarking();
 		player = new PlayerCar();
 		setTurnTimer(40);
 		roadManager = new RoadManager();
+		isGameStopped = false;
 
 		drawScene();
 	}
@@ -29,6 +31,13 @@ public class RacerGame extends Game {
 		roadMarking.move(player.speed);
 		player.move();
 		roadManager.move(player.speed);
+	}
+
+	private void gameOver() {
+		isGameStopped = true;
+		showMessageDialog(Color.AQUA, "Bay-bay", Color.BLACK, 40);
+		stopTurnTimer();
+		player.stop();
 	}
 
 	private void drawField() {
@@ -57,12 +66,15 @@ public class RacerGame extends Game {
 
 	@Override
 	public void onTurn(int t) {
-		moveAll();
-		roadManager.generateNewRoadObjects(this);
+		if (roadManager.checkCrush(player)) {
+			gameOver();
+		} else {
+			moveAll();
+			roadManager.generateNewRoadObjects(this);
 
+		}
 		drawScene();
 	}
-
 	@Override
 	public void setCellColor(int x, int y, Color color) {
 		if(x < WIDTH && x >= 0 && y < HEIGHT && y >= 0) {
