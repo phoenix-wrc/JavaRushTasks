@@ -6,11 +6,12 @@ import com.javarush.games.racer.road.RoadManager;
 public class RacerGame extends Game {
 	public static final int WIDTH = 64, HEIGHT = 64, CENTER_X = WIDTH / 2, ROADSIDE_WIDTH = 14;
 	private static final int RACE_GOAL_CARS_COUNT = 40;
+	private boolean isGameStopped;
 	private RoadMarking roadMarking;
 	private PlayerCar player;
 	private RoadManager roadManager;
 	private FinishLine finishLine;
-	private boolean isGameStopped;
+	private ProgressBar progressBar;
 
 	private void createGame() {
 		roadMarking = new RoadMarking();
@@ -19,16 +20,17 @@ public class RacerGame extends Game {
 		roadManager = new RoadManager();
 		isGameStopped = false;
 		finishLine = new FinishLine();
-
+		progressBar = new ProgressBar(RACE_GOAL_CARS_COUNT);
 		drawScene();
 	}
 
 	private void drawScene() {
 		drawField();
 		roadMarking.draw(this);
-		player.draw(this);
 		roadManager.draw(this);
 		finishLine.draw(this);
+		player.draw(this);
+		progressBar.draw(this);
 	}
 
 	private void moveAll()  {
@@ -36,6 +38,7 @@ public class RacerGame extends Game {
 		player.move();
 		roadManager.move(player.speed);
 		finishLine.move(player.speed);
+		progressBar.move(roadManager.getPassedCarsCount());
 	}
 
 	private void gameOver() {
