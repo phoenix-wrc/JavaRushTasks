@@ -1,10 +1,10 @@
 package com.javarush.games.racer.road;
 
 import com.javarush.engine.cell.Game;
-import com.javarush.games.racer.GameObject;
 import com.javarush.games.racer.RacerGame;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class RoadManager {
@@ -13,6 +13,23 @@ public class RoadManager {
 	private static final int FIRST_LANE_POSITION = 16;
 	private static final int FOURTH_LANE_POSITION = 44;
 	private List<RoadObject> items = new ArrayList<>();
+//
+//	private void deletePassedItems() {
+//		List<RoadObject> check = items;
+//		for (RoadObject roadObject : check) {
+//			if (roadObject.y >= RacerGame.HEIGHT) {
+//				items.remove(roadObject);
+//			}
+//		}
+//	}
+
+	private void deletePassedItems() {
+		Iterator<RoadObject> iterator = items.iterator();
+		while (iterator.hasNext()) {
+			RoadObject item = iterator.next();
+			if (item.y >= RacerGame.HEIGHT) iterator.remove();
+		}
+	}
 
 	private boolean isThornExists() {
 		for (int i = 0; i < items.size(); i++) {
@@ -37,6 +54,8 @@ public class RoadManager {
 		for (int i = 0; i < items.size(); i++) {
 			items.get(i).move(items.get(i).speed + boost);
 		}
+
+		deletePassedItems();
 	}
 
 	public void draw(Game game) {
