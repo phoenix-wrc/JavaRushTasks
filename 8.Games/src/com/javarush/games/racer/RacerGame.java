@@ -28,6 +28,7 @@ public class RacerGame extends Game {
 	private void moveAll()  {
 		roadMarking.move(player.speed);
 		player.move();
+		roadManager.move(player.speed);
 	}
 
 	private void drawField() {
@@ -57,6 +58,8 @@ public class RacerGame extends Game {
 	@Override
 	public void onTurn(int t) {
 		moveAll();
+		roadManager.generateNewRoadObjects(this);
+
 		drawScene();
 	}
 

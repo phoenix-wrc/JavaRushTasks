@@ -14,6 +14,25 @@ public class RoadManager {
 	private static final int FOURTH_LANE_POSITION = 44;
 	private List<RoadObject> items = new ArrayList<>();
 
+	private boolean isThornExists() {
+		for (int i = 0; i < items.size(); i++) {
+			if(items.get(i).type == RoadObjectType.THORN) {
+				return true;
+			}
+		}
+		return false;
+	}
+
+	private void generateThorn(Game game) {
+		if(!isThornExists() && game.getRandomNumber(100) < 10) {
+			addRoadObject(RoadObjectType.THORN, game);
+		}
+	}
+
+	public void generateNewRoadObjects(Game game) {
+		generateThorn(game);
+	}
+
 	public void move(int boost) {
 		for (int i = 0; i < items.size(); i++) {
 			items.get(i).move(items.get(i).speed + boost);
@@ -38,6 +57,4 @@ public class RoadManager {
 		if(type == RoadObjectType.THORN) return new Thorn(x,y);
 		return null;
 	}
-
-
 }
