@@ -40,6 +40,7 @@ public class RacerGame extends Game {
 		finishLine.move(player.speed);
 		progressBar.move(roadManager.getPassedCarsCount());
 	}
+	
 
 	private void gameOver() {
 		isGameStopped = true;
