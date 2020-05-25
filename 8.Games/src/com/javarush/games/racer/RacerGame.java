@@ -7,6 +7,7 @@ public class RacerGame extends Game {
 	public static final int WIDTH = 64, HEIGHT = 64, CENTER_X = WIDTH / 2, ROADSIDE_WIDTH = 14;
 	private static final int RACE_GOAL_CARS_COUNT = 40;
 	private boolean isGameStopped;
+	private int score;
 	private RoadMarking roadMarking;
 	private PlayerCar player;
 	private RoadManager roadManager;
@@ -21,6 +22,7 @@ public class RacerGame extends Game {
 		isGameStopped = false;
 		finishLine = new FinishLine();
 		progressBar = new ProgressBar(RACE_GOAL_CARS_COUNT);
+		score = 3500;
 		drawScene();
 	}
 
@@ -89,8 +91,9 @@ public class RacerGame extends Game {
 		} else {
 			moveAll();
 			roadManager.generateNewRoadObjects(this);
+			score -= 5;
 		}
-		
+		setScore(score);
 		drawScene();
 	}
 
