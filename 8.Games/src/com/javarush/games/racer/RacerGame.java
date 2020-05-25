@@ -40,7 +40,7 @@ public class RacerGame extends Game {
 		finishLine.move(player.speed);
 		progressBar.move(roadManager.getPassedCarsCount());
 	}
-	
+
 
 	private void gameOver() {
 		isGameStopped = true;
@@ -73,11 +73,19 @@ public class RacerGame extends Game {
 		createGame();
 	}
 
+	private void win() {
+		isGameStopped = true;
+		showMessageDialog(Color.GREEN, "МОЛОДЕЧИК", Color.WHEAT, 50);
+		stopTurnTimer();
+	}
+
 	@Override
 	public void onTurn(int t) {
 		if(RACE_GOAL_CARS_COUNT <= roadManager.getPassedCarsCount()) finishLine.show();
 		if (roadManager.checkCrush(player)) {
 			gameOver();
+		} else if(finishLine.isCrossed(player)) {
+			win();
 		} else {
 			moveAll();
 			roadManager.generateNewRoadObjects(this);
