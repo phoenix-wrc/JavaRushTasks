@@ -82,9 +82,9 @@ public class RoadManager {
 	}
 
 	public void generateNewRoadObjects(Game game) {
-		//generateThorn(game);
+		generateThorn(game);
 		generateRegularCar(game);
-		//generateMovingCar(game);
+		generateMovingCar(game);
 	}
 
 	public void move(int boost) {
