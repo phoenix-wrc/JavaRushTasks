@@ -75,6 +75,7 @@ public class RacerGame extends Game {
 		}
 		drawScene();
 	}
+
 	@Override
 	public void setCellColor(int x, int y, Color color) {
 		if(x < WIDTH && x >= 0 && y < HEIGHT && y >= 0) {
