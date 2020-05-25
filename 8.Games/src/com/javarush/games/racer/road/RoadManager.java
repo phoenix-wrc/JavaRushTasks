@@ -15,6 +15,13 @@ public class RoadManager {
 	private static final int FOURTH_LANE_POSITION = 44;
 	private List<RoadObject> items = new ArrayList<>();
 
+	private void generateRegularCar(Game game) {
+		int carTypeNumber = game.getRandomNumber(4);
+		if(game.getRandomNumber(100) < 30) {
+			addRoadObject(RoadObjectType.values()[carTypeNumber], game);
+		}
+	}
+
 	public boolean checkCrush(PlayerCar car) {
 		for (RoadObject item: items) {
 			if(item.isCollision(car)) return true;
@@ -47,6 +54,7 @@ public class RoadManager {
 
 	public void generateNewRoadObjects(Game game) {
 		generateThorn(game);
+		generateRegularCar(game);
 	}
 
 	public void move(int boost) {
@@ -71,8 +79,7 @@ public class RoadManager {
 	}
 
 	private RoadObject createRoadObject(RoadObjectType type, int x, int y) {
-		if(type != RoadObjectType.THORN) return null;
 		if(type == RoadObjectType.THORN) return new Thorn(x,y);
-		return null;
+		else return new Car(type, x, y);
 	}
 }
