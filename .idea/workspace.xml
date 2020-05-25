@@ -546,22 +546,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="0" key="FileDocumentManager.FileCacheConflict/0.0.1920.1040@0.0.1920.1040" timestamp="1590335499371" />
-    <state width="1877" height="289" key="GridCell.Tab.0.bottom" timestamp="1590397577340">
+    <state width="1877" height="289" key="GridCell.Tab.0.bottom" timestamp="1590397659546">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="289" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590397577340" />
-    <state width="1877" height="289" key="GridCell.Tab.0.center" timestamp="1590397577340">
+    <state width="1877" height="289" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590397659546" />
+    <state width="1877" height="289" key="GridCell.Tab.0.center" timestamp="1590397659546">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="289" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590397577340" />
-    <state width="1877" height="289" key="GridCell.Tab.0.left" timestamp="1590397577339">
+    <state width="1877" height="289" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590397659546" />
+    <state width="1877" height="289" key="GridCell.Tab.0.left" timestamp="1590397659545">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="289" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590397577339" />
-    <state width="1877" height="289" key="GridCell.Tab.0.right" timestamp="1590397577340">
+    <state width="1877" height="289" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590397659545" />
+    <state width="1877" height="289" key="GridCell.Tab.0.right" timestamp="1590397659546">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="289" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590397577340" />
+    <state width="1877" height="289" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590397659546" />
     <state width="1877" height="320" key="GridCell.Tab.1.bottom" timestamp="1582992968574">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -625,6 +625,11 @@
           <url>file://$PROJECT_DIR$/8.Games/src/com/javarush/games/snake/Enemy.java</url>
           <line>46</line>
           <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/8.Games/src/com/javarush/games/racer/RacerGame.java</url>
+          <line>94</line>
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
