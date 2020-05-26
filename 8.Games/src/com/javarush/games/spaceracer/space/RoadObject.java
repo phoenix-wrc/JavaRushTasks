@@ -1,7 +1,7 @@
-package com.javarush.games.racer.road;
+package com.javarush.games.spaceracer.space;
 
-import com.javarush.games.racer.GameObject;
-import com.javarush.games.racer.ShapeMatrix;
+import com.javarush.games.spaceracer.GameObject;
+import com.javarush.games.spaceracer.ShapeMatrix;
 
 import java.util.List;
 
@@ -22,7 +22,7 @@ public class RoadObject extends GameObject {
      * и дополнительная,
      * которая зависит от скорости движения игрока.
      */
-    public void move(int boost, List<RoadObject> roadObject) {
+    public void move(double boost, List<RoadObject> roadObject) {
         this.y += boost;
     }
 

@@ -1,8 +1,8 @@
-package com.javarush.games.racer.road;
+package com.javarush.games.spaceracer.space;
 
 import com.javarush.engine.cell.Game;
-import com.javarush.games.racer.PlayerCar;
-import com.javarush.games.racer.RacerGame;
+import com.javarush.games.spaceracer.PlayerShip;
+import com.javarush.games.spaceracer.RacerGame;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -48,7 +48,7 @@ public class RoadManager {
 		}
 	}
 
-	public boolean checkCrush(PlayerCar car) {
+	public boolean checkCrush(PlayerShip car) {
 		for (RoadObject item: items) {
 			if(item.isCollision(car)) return true;
 		}
@@ -87,7 +87,7 @@ public class RoadManager {
 		generateMovingCar(game);
 	}
 
-	public void move(int boost) {
+	public void move(double boost) {
 		for (int i = 0; i < items.size(); i++) {
 			items.get(i).move(items.get(i).speed + boost, items);
 		}

@@ -1,4 +1,4 @@
-package com.javarush.games.racer;
+package com.javarush.games.spaceracer;
 
 
 public class FinishLine extends GameObject {
@@ -7,7 +7,7 @@ public class FinishLine extends GameObject {
 				ShapeMatrix.FINISH_LINE);
 	}
 
-	public boolean isCrossed(PlayerCar player) {
+	public boolean isCrossed(PlayerShip player) {
 		return player.y < y;
 	}
 
@@ -17,7 +17,7 @@ public class FinishLine extends GameObject {
 		isVisible = true;
 	}
 
-	public void move(int boost) {
+	public void move(double boost) {
 		if(isVisible) y += boost;
 	}
 }

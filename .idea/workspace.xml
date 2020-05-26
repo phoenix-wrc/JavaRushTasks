@@ -3,25 +3,37 @@
   <component name="ChangeListManager">
     <list default="true" id="8a9c2848-0864-419d-ba1c-a0669c6ee00f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/racer/road/RoadManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/racer/road/RoadManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/snake/Apple.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/snake/Apple.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/snake/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/snake/GameObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/snake/Snake.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/snake/Snake.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/snake/SnakeGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/snake/SnakeGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/snake/Условие.jrtc" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/snake/Условие.jrtc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/racer/Direction.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/spaceracer/Direction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/racer/FinishLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/spaceracer/FinishLine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/racer/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/spaceracer/GameObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/racer/PlayerCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/spaceracer/PlayerShip.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/racer/ProgressBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/spaceracer/ProgressBar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/racer/RacerGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/spaceracer/RacerGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/racer/RoadMarking.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/racer/ShapeMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/spaceracer/ShapeMatrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/racer/road/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/spaceracer/space/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/racer/road/MovingCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/spaceracer/space/MovingCar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/racer/road/RoadManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/spaceracer/space/RoadManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/racer/road/RoadObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/spaceracer/space/RoadObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/racer/road/RoadObjectType.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/spaceracer/space/RoadObjectType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/racer/road/Thorn.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/spaceracer/space/Thorn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/racer/Условие.jrtc" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/spaceracer/Условие.jrtc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JavaRushPlugin.properties" beforeDir="false" afterPath="$PROJECT_DIR$/JavaRushPlugin.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out.log" beforeDir="false" afterPath="$PROJECT_DIR$/out.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/8_Games_jar/8.Games.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/8_Games_jar/8.Games.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/moonlander/Условие.jrtc" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/moonlander/Условие.jrtc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/racer/Direction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/racer/Direction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/racer/GameObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/racer/GameObject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/racer/PlayerCar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/racer/PlayerCar.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/racer/RacerGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/racer/RacerGame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/racer/ShapeMatrix.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/racer/ShapeMatrix.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/racer/road/RoadManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/racer/road/RoadManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/racer/road/RoadObject$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/racer/road/RoadObject$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/racer/road/RoadObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/racer/road/RoadObject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/racer/Условие.jrtc" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/racer/Условие.jrtc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/racer/Direction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/racer/GameObject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/racer/PlayerCar.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/racer/RacerGame.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/racer/RoadMarking.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/racer/ShapeMatrix.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/racer/road/RoadManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/racer/road/RoadObject$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/racer/road/RoadObject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/racer/road/RoadObjectType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/racer/road/Thorn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/racer/Условие.jrtc" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -352,7 +364,7 @@
       </method>
     </configuration>
     <configuration name="RacerGame" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="com.javarush.games.racer.RacerGame" />
+      <option name="MAIN_CLASS_NAME" value="com.javarush.games.spaceracer.RacerGame" />
       <module name="8.Games" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -503,10 +515,10 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="586" y="198" key="#Inspections" timestamp="1590407505032">
+    <state x="874" y="233" key="#Inspections" timestamp="1590508752427">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="586" y="198" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1590407505032" />
+    <state x="874" y="233" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1590508752427" />
     <state x="552" y="178" width="816" height="729" key="#Intentions" timestamp="1590325384416">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -547,10 +559,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="250" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589904296703" />
-    <state x="277" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1582699506603">
+    <state x="753" y="166" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1590507352372">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="277" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582699506603" />
+    <state x="753" y="166" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590507352372" />
     <state x="534" y="259" key="FileChooserDialogImpl" timestamp="1590069561950">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -559,22 +571,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="0" key="FileDocumentManager.FileCacheConflict/0.0.1920.1040@0.0.1920.1040" timestamp="1590335499371" />
-    <state width="1877" height="246" key="GridCell.Tab.0.bottom" timestamp="1590421349827">
+    <state width="1279" height="243" key="GridCell.Tab.0.bottom" timestamp="1590511180691">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="246" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590421349827" />
-    <state width="1877" height="246" key="GridCell.Tab.0.center" timestamp="1590421349826">
+    <state width="1279" height="243" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590511180691" />
+    <state width="1279" height="243" key="GridCell.Tab.0.center" timestamp="1590511180691">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="246" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590421349826" />
-    <state width="1877" height="246" key="GridCell.Tab.0.left" timestamp="1590421349826">
+    <state width="1279" height="243" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590511180691" />
+    <state width="1279" height="243" key="GridCell.Tab.0.left" timestamp="1590511180691">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="246" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590421349826" />
-    <state width="1877" height="246" key="GridCell.Tab.0.right" timestamp="1590421349826">
+    <state width="1279" height="243" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590511180691" />
+    <state width="1279" height="243" key="GridCell.Tab.0.right" timestamp="1590511180691">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="246" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590421349826" />
+    <state width="1279" height="243" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590511180691" />
     <state width="1877" height="320" key="GridCell.Tab.1.bottom" timestamp="1582992968574">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -611,6 +623,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="672" y="130" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1590069578372" />
+    <state x="1052" y="267" key="refactoring.ChangeSignatureDialog" timestamp="1590507744661">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1052" y="267" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590507744661" />
+    <state x="913" y="242" key="run.anything.popup" timestamp="1590510705787">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="913" y="242" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1590510705787" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1590321301009">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -640,14 +660,9 @@
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/8.Games/src/com/javarush/games/racer/RacerGame.java</url>
-          <line>116</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/8.Games/src/com/javarush/games/racer/RacerGame.java</url>
-          <line>86</line>
-          <option name="timeStamp" value="24" />
+          <url>file://$PROJECT_DIR$/8.Games/src/com/javarush/games/spaceracer/RacerGame.java</url>
+          <line>73</line>
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

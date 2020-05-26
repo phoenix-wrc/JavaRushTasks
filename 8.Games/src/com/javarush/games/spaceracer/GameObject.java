@@ -1,21 +1,21 @@
-package com.javarush.games.racer;
+package com.javarush.games.spaceracer;
 
 import com.javarush.engine.cell.Color;
 import com.javarush.engine.cell.Game;
 
 public class GameObject {
-    public int x;
-    public int y;
+    public double x;
+    public double y;
     public int width;
     public int height;
     public int[][] matrix;
 
-    public GameObject(int x, int y) {
+    public GameObject(double x, double y) {
         this.x = x;
         this.y = y;
     }
 
-    public GameObject(int x, int y, int[][] matrix) {
+    public GameObject(double x, double y, int[][] matrix) {
         this.x = x;
         this.y = y;
         this.matrix = matrix;
@@ -27,7 +27,7 @@ public class GameObject {
         for (int i = 0; i < width; i++) {
             for (int j = 0; j < height; j++) {
                 int colorIndex = matrix[j][i];
-                game.setCellColor(x + i, y + j, Color.values()[colorIndex]);
+                game.setCellColor((int)x + i, (int)y + j, Color.values()[colorIndex]);
             }
         }
     }
@@ -60,7 +60,7 @@ public class GameObject {
         return false;
     }
 
-    private boolean isCollision(int x, int y) {
+    private boolean isCollision(double x, double y) {
         for (int matrixX = 0; matrixX < width; matrixX++) {
             for (int matrixY = 0; matrixY < height; matrixY++) {
                 if (matrix[matrixY][matrixX] != 0 && matrixX + this.x == x && matrixY + this.y == y) {

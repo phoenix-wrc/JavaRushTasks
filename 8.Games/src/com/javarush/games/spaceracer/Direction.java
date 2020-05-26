@@ -1,4 +1,4 @@
-package com.javarush.games.racer;
+package com.javarush.games.spaceracer;
 
 public enum Direction {
 	RIGHT,
