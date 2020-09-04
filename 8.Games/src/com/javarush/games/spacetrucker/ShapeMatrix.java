@@ -1,4 +1,4 @@
-package com.javarush.games.spaceracer;
+package com.javarush.games.spacetrucker;
 
 public class ShapeMatrix {
     public static final int[][] PLAYER = new int[][]{

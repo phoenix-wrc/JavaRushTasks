@@ -1,7 +1,7 @@
-package com.javarush.games.spaceracer.space;
+package com.javarush.games.spacetrucker.space;
 
-import com.javarush.games.spaceracer.GameObject;
-import com.javarush.games.spaceracer.ShapeMatrix;
+import com.javarush.games.spacetrucker.GameObject;
+import com.javarush.games.spacetrucker.ShapeMatrix;
 
 import java.util.List;
 

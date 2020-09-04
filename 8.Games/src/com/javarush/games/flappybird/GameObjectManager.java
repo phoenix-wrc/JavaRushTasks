@@ -6,73 +6,59 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-import static com.javarush.games.flappybird.FlappyBirdGame.HEIGHT;
-import static com.javarush.games.flappybird.FlappyBirdGame.WIDTH;
+import static com.javarush.games.flappybird.FlappyBirdGame.*;
+
 
 public class GameObjectManager { // отдельно управляем всеми объектами НЕ птичками
 	private List<GroundPart> ground = new ArrayList<>(); // поверхность
-	private List<Colon> colons = new ArrayList<>(); // Колонны
+	private List<Colons> colons = new ArrayList<>(); // Колонны
+	private double deltaForGround = 1.0; // для подбора правильного смещения поверхности при переносе земли
+	private int securitySpace = 6;
+	public static final int X_FOR_COLONS = 254 - ShapeMatrix.COLON[0].length; //место появление последней колонны минус ширина, подобрал примерно
 
-	Random random = new Random();
-	public void generateNewObjects(Game game)    {
-		generateGround(game);
-	}
+	Random random = new Random(); // тут придется еще один поток создать
 
-	private void generateGround(Game game) {
-		while (ground.size() < 101) {
-			GroundPart lastPart = ground.get(ground.size() - 1);
-			GroundPart ro = new GroundPart(lastPart.x + 1.5 * lastPart.speed, HEIGHT - 6);
-			ground.add(ro);
-		}
-		//while (colons.size() < 0) {
-			Colon lastColon = colons.get(colons.size()-1);
-		//double y;
-		//do {
-		//	y = random.nextGaussian()  ;//* (HEIGHT-30);
-		//} while(y < 1.5 && y > -1.5);
-		//System.out.println(y);
-			if (lastColon.x < ShapeMatrix.COLON[0].length * 2)
-				colons.add(new Colon((double)WIDTH, random.nextInt(HEIGHT-15)));
-		//}
-	}
-	// задаем первые объекты, землю и пару колонн
+	// создаем все нужные объекты
 	public void initializeObject() {
-		for (int i = 0; i < WIDTH; i++) {
+		for (int i = 0; i <= WIDTH; i++) {
 			ground.add(new GroundPart(i,HEIGHT-6));
 		}
-		for (int i = 0; i < 3; i++) {
-			colons.add(new Colon((double)(WIDTH/2) + ShapeMatrix.COLON[0].length * 2 * i,
-					random.nextInt(HEIGHT-30)));
+		for (int i = 0; i < 5; i++) {
+			colons.add(new Colons((double)(WIDTH/2) + ShapeMatrix.COLON[0].length * 3 * i,
+					random.nextInt(HEIGHT-18) + 12));
 		}
 	}
-	//Удаляем ненужные объекты
-	public void deletePassedObjects() {
-		ground.removeIf(obj -> {
-			//System.out.println(obj.x); // включать для проверки))
-			return obj.x < (0 - obj.width);
-		});
-		colons.removeIf(obj -> {
-			//System.out.println(obj.x); //Включать для проверки
-			return obj.x < (0 - obj.width);
-		});
+	//переносим сбежавшие объекты
+	public void replacePassedObjects() {
+		for (GroundPart ground: ground) {
+			if (ground.x < (0 - ground.width)) {
+				ground.x = WIDTH;// + ground.speed;// * ground.speed;
+				//при изменнии скорости нужно играть с коифициэнтами, тут тольк магия поможет
+				ground.reCreateMatrix();
+			}
+		}
+		// теперь колнны, я сказал колонны))
+		for (Colons cln: colons) {
+			if (cln.x < ( - ShapeMatrix.COLON[0].length)) {
+				cln.setX(X_FOR_COLONS);
+				cln.setY(random.nextInt(HEIGHT - (securitySpace * 6)) + securitySpace * 4); // на самом деле на глаз подбирается)))
+			}
+		}
 	}
 
-	// двигаем объекты, скорость уже задана в объектах,
-	// потом вызываем удаление всех объектов
+	// двигаем объекты, скорость уже задана в объектах
 	public void move() {
-		for (Colon colon : colons) {
+		for (Colons colon : colons) {
 			colon.move();
 		}
 		for (GroundPart groundPart : ground) {
 			groundPart.move();
 		}
-		deletePassedObjects(); // удаляем излишек
-		//System.out.println(ground.size());
-		//System.out.println(colons.size());
+		replacePassedObjects(); // переносим ушедшее после хода
 	}
 	//Отрисовываем всё
 	public void draw(Game game) {
-		for (Colon colon : colons) {
+		for (Colons colon : colons) {
 			colon.draw(game);
 		}
 		for (GroundPart groundPart : ground) {
@@ -82,21 +68,15 @@ public class GameObjectManager { // отдельно управляем всем
 	// На каждом шагу чекаем не врезалась ли птица в колонну
 	// Как вариант исключить из чека незакрашенные ячейки
 	public boolean checkCollision(Bird bird) {
-		boolean answer = false;
-		for (Colon colon : colons) {
-			if(bird.x + bird.width > colon.x && bird.x < colon.x + colon.width){
-				if (bird.y + bird.height > colon.y) {
-					bird.dead();
-					answer = true;
-					break;
-				}
-			}
-		}
-		if(bird.y > HEIGHT-6- bird.height) {
+		if(bird.y > HEIGHT - 6 - bird.height) { //сначало чекаем столкновение с землей, и не даём падать вниз
 			bird.y = HEIGHT - 6 - bird.height;
 			bird.dead();
-			answer = true;
+			return true;
 		}
-		return answer;
+		for (Colons colon : colons) { // проверяем колонны на персечение
+			if(colon.checkCollision(bird))
+				return true;
+		}
+		return false;
 	}
 }

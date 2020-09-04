@@ -2,20 +2,21 @@ package com.javarush.games.flappybird;
 
 import com.javarush.engine.cell.*;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class FlappyBirdGame extends Game {
 	public static final int WIDTH = 100, HEIGHT = 100;
+	public static final double SPEED = 1.0;
 	private Bird bird;
 	private GameObjectManager gameObjects;
 	private boolean isGameStopped;
 
 	private void createGame() {
 		bird = new Bird(3 , (double)(HEIGHT - ShapeMatrix.BIRD_1.length)/2);
+		//ставим птицу в середину
 		gameObjects = new GameObjectManager();
+		//управление всеми объектами кроме птици
 		gameObjects.initializeObject();
-		setTurnTimer(90);
+
+		setTurnTimer(40);//подбирается в ручную((
 		drawScene();
 	}
 
@@ -53,7 +54,7 @@ public class FlappyBirdGame extends Game {
 	@Override
 	public void onTurn(int t)    {
 		moveAll();
-		gameObjects.generateNewObjects(this);
+		//gameObjects.generateNewObjects(this);
 		//if(bird.y > HEIGHT - 6 - bird.height) {
 		//	bird.dead();
 		//	bird.y = HEIGHT - 6 - bird.height;

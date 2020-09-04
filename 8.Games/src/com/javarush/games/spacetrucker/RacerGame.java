@@ -1,7 +1,7 @@
-package com.javarush.games.spaceracer;
+package com.javarush.games.spacetrucker;
 
 import com.javarush.engine.cell.*;
-import com.javarush.games.spaceracer.space.RoadManager;
+import com.javarush.games.spacetrucker.space.RoadManager;
 
 public class RacerGame extends Game {
 	public static final int WIDTH = 100, HEIGHT = 100, CENTER_X = WIDTH / 2, ROADSIDE_WIDTH = 8;

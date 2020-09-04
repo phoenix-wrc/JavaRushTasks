@@ -1,6 +1,6 @@
-package com.javarush.games.spaceracer;
+package com.javarush.games.spacetrucker;
 
-import com.javarush.games.spaceracer.space.RoadManager;
+import com.javarush.games.spacetrucker.space.RoadManager;
 
 public class PlayerShip extends GameObject {
 	private static int playerCarHeight = ShapeMatrix.PLAYER.length;

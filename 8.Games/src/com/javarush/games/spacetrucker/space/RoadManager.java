@@ -1,8 +1,8 @@
-package com.javarush.games.spaceracer.space;
+package com.javarush.games.spacetrucker.space;
 
 import com.javarush.engine.cell.Game;
-import com.javarush.games.spaceracer.PlayerShip;
-import com.javarush.games.spaceracer.RacerGame;
+import com.javarush.games.spacetrucker.PlayerShip;
+import com.javarush.games.spacetrucker.RacerGame;
 
 import java.util.ArrayList;
 import java.util.Iterator;

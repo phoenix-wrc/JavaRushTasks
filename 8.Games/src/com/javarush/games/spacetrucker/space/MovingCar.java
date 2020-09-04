@@ -1,4 +1,4 @@
-package com.javarush.games.spaceracer.space;
+package com.javarush.games.spacetrucker.space;
 
 import java.util.List;
 

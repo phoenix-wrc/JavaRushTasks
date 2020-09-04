@@ -1,4 +1,4 @@
-package com.javarush.games.spaceracer.space;
+package com.javarush.games.spacetrucker.space;
 
 public class Car extends RoadObject {
 	public Car(RoadObjectType type, int x, int y) {

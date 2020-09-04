@@ -7,7 +7,7 @@ public class GameObject  {
 	public double x, y, width, height; // координаты и размер матрици
 	public int[][] matrix; // Матрицы
 	Random random = new Random();   // делаем поток рандомных чисел, что бы каждый раз не имортить Game
-	public double speed = 2.0;  // скорость движения объектов,
+	public double speed = FlappyBirdGame.SPEED;  // скорость движения объектов,
 								// при корректировки придется подбирать
 								// скорость появления земли((
 
