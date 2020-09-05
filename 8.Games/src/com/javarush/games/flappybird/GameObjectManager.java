@@ -12,6 +12,7 @@ import static com.javarush.games.flappybird.FlappyBirdGame.*;
 public class GameObjectManager { // отдельно управляем всеми объектами НЕ птичками
 	private List<GroundPart> ground = new ArrayList<>(); // поверхность
 	private List<Colons> colons = new ArrayList<>(); // Колонны
+	private List<GameObject> clouds = new ArrayList<>(); // Облака
 	private double deltaForGround = 1.0; // для подбора правильного смещения поверхности при переносе земли
 	private int securitySpace = 6;
 	public static final int X_FOR_COLONS = 254 - ShapeMatrix.COLON[0].length; //место появление последней колонны минус ширина, подобрал примерно
@@ -27,6 +28,7 @@ public class GameObjectManager { // отдельно управляем всем
 			colons.add(new Colons((double)(WIDTH/2) + ShapeMatrix.COLON[0].length * 3 * i,
 					random.nextInt(HEIGHT-18) + 12));
 		}
+		clouds.add(new GameObject(WIDTH, HEIGHT/2, ShapeMatrix.CLOUD_1));
 	}
 	//переносим сбежавшие объекты
 	public void replacePassedObjects() {
@@ -44,6 +46,12 @@ public class GameObjectManager { // отдельно управляем всем
 				cln.setY(random.nextInt(HEIGHT - (securitySpace * 6)) + securitySpace * 4); // на самом деле на глаз подбирается)))
 			}
 		}
+		for (GameObject cld: clouds) {
+			if (cld.x < ( - ShapeMatrix.CLOUD_1[0].length)) {
+				cld.x = WIDTH;
+				cld.y = random.nextInt(HEIGHT - (securitySpace * 6)) + securitySpace * 4; // на самом деле на глаз подбирается)))
+			}
+		}
 	}
 
 	// двигаем объекты, скорость уже задана в объектах
@@ -54,10 +62,16 @@ public class GameObjectManager { // отдельно управляем всем
 		for (GroundPart groundPart : ground) {
 			groundPart.move();
 		}
+		for (GameObject cld: clouds) {
+			cld.move();
+		}
 		replacePassedObjects(); // переносим ушедшее после хода
 	}
 	//Отрисовываем всё
 	public void draw(Game game) {
+		for (GameObject cld: clouds) {
+			cld.draw(game);
+		}
 		for (Colons colon : colons) {
 			colon.draw(game);
 		}

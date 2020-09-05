@@ -3,8 +3,13 @@ package com.javarush.games.flappybird;
 public class Bird extends GameObject {
 	private double ySpeed = 0;
 	private int flaps = 0;
-	private double boost = 0.25;
+	private double boost = 0.15;
 	public boolean isDead = false;
+	private int scope = 0;
+
+	public int getScope() {
+		return scope;
+	}
 
 	public Bird(double x, double y) {
 		super(x, y, ShapeMatrix.BIRD_1);
@@ -38,5 +43,10 @@ public class Bird extends GameObject {
 			y = 0;
 			isDead = true;
 		}
+	}
+
+	public void scope(int i) {
+		scope += i;
+		System.out.println(scope);
 	}
 }

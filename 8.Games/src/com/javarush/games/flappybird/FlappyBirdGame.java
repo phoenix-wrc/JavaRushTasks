@@ -30,6 +30,7 @@ public class FlappyBirdGame extends Game {
 
 	private void drawScene() {
 		drawField();
+
 		gameObjects.draw(this);
 		bird.draw(this);
 	}

@@ -4,12 +4,15 @@ import com.javarush.engine.cell.Game;
 public class Colons extends GameObject {
 	private Colon upColon;
 	private Colon dwnColon;
+	int freeSpace = 20;
+
 	//Вообще не уверен что так норм. Но пока работает + можно менять что-то.
 	public Colons(double x, double y) {
 		super(x,y);
-		upColon = new Colon(x, y - 18 - ShapeMatrix.COLON.length, ShapeMatrix.COLON);
+		upColon = new Colon(x, y - freeSpace - ShapeMatrix.COLON.length, ShapeMatrix.COLON);
 		dwnColon = new Colon(x, y, ShapeMatrix.COLON);
 	}
+
 
 	public void move() {
 		super.move();
@@ -31,12 +34,14 @@ public class Colons extends GameObject {
 		dwnColon.x = x;
 	}
 	public void setY (double y) {
-		upColon.y = y - 18 - ShapeMatrix.COLON.length;
+		upColon.y = y - freeSpace - ShapeMatrix.COLON.length;
 		dwnColon.y = y;
 	}
 
 	//чекаем колижин
 	public boolean checkCollision(Bird bird) {
+		if(bird.x == upColon.x + upColon.width)
+			bird.scope(1);
 		if(bird.x + bird.width > upColon.x && bird.x < upColon.x + upColon.width){
 			if (bird.y < upColon.y + upColon.height ||
 					bird.y + bird.height > dwnColon.y) {

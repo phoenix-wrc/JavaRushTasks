@@ -3,21 +3,25 @@ package com.javarush.games.Painter;
 import com.javarush.engine.cell.Color;
 import com.javarush.engine.cell.Game;
 
-//import java.awt.*;
-
 public class Cell {
 	int x;
 	int y;
-	public boolean isSelested;
+	public boolean isSelected;
 	int colorIndex;
+	private String nameMenu = "";
 
 	public void draw (Game game)    {
-		//game.setCellColor(x, y, Color.values()[colorIndex]);
-		game.setCellValueEx(x,y,Color.values()[colorIndex], Integer.toString(colorIndex),getColorText(10));
+		if(nameMenu.isEmpty())
+			game.setCellValueEx(x, y, Color.values()[colorIndex],
+					Integer.toString(colorIndex), getColorText(10));
+		else
+			game.setCellValueEx(x, y, Color.values()[colorIndex],
+					nameMenu, getColorText(10));
+
 	}
 
 	private Color getColorText (int scale) {
-		Color color = Color.NONE;
+		Color color;
 		if (colorIndex < 148 - scale)
 			color = Color.values()[colorIndex+10];
 		else
@@ -39,6 +43,10 @@ public class Cell {
 		this.x = x;
 		this.y = y;
 		setColorIndex(colorNum);
-		isSelested = false;
+		isSelected = false;
+	}
+
+	public void setNameMenu(String name) {
+		nameMenu = name;
 	}
 }
