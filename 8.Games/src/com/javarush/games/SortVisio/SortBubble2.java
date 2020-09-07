@@ -2,15 +2,17 @@ package com.javarush.games.SortVisio;
 
 import java.util.List;
 
-public class SortBubble {
-	int idx_i = 0;
-	int idx_j = 0;
+public class SortBubble2 {
+	int i;
+	int j;
 	private List<NumberClass> numbers;
 	int sizeNumbers;
 
-	public SortBubble(List<NumberClass> numbers) {
+	public SortBubble2(List<NumberClass> numbers) {
 		this.numbers = numbers;
 		sizeNumbers = numbers.size();
+		i = 1;
+		j = sizeNumbers - 1;
 	}
 
 	public void step() throws InterruptedException {
@@ -18,21 +20,30 @@ public class SortBubble {
 	}
 
 	public void stepOut() throws InterruptedException {
-		//Thread.sleep(100);
-		if (idx_i + 1 < sizeNumbers) {
+		if (i < sizeNumbers) {
 			stepInternal();
-		} else idx_i = 0;
+		} else {
+			i = 1;
+			j = sizeNumbers - 1;
+		}
 	}
 
 	private void stepInternal() throws InterruptedException {
-		if (idx_j + 1 < sizeNumbers - idx_i) {
-			if (numbers.get(idx_j + 1).num > numbers.get(idx_j).num) {
-				swap(numbers.get(idx_j).x, numbers.get(idx_j + 1).x);
+		if (j >= i) {
+			if (numbers.get(j - 1).num > numbers.get(j).num) {
+				numbers.get(j).setChosen();
+				numbers.get(j - 1).setChosen();
+				Thread.sleep(50);
+				swap(j, j - 1);
+				numbers.get(j).setChosen();
+				numbers.get(j - 1).setChosen();
+			} else {
+
 			}
-			++idx_j;
+			j--;
 		} else {
-			idx_j = 0;
-			++idx_i;
+			j = sizeNumbers - 1;
+			i++;
 		}
 	}
 
@@ -40,7 +51,7 @@ public class SortBubble {
 		NumberClass temp = numbers.get(j2);
 		numbers.set(j2, numbers.get(j1));
 		numbers.set(j1, temp);
-		Thread.sleep(1);
+		Thread.sleep(5);
 		for (int i = 0; i < sizeNumbers; i++) {
 			numbers.get(i).x = i;
 		}

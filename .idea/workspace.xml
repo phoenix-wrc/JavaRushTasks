@@ -2,23 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a9c2848-0864-419d-ba1c-a0669c6ee00f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/matrix.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/SortBubble2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/SortBubble2Clean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/Painter/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/Painter/Cell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/Painter/PaintForGameSprite.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/Painter/PaintForGameSprite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/flappybird/Bird.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/flappybird/Bird.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/flappybird/Colons.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/flappybird/Colons.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/flappybird/FlappyBirdGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/flappybird/FlappyBirdGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/flappybird/GameObjectManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/flappybird/GameObjectManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/flappybird/ShapeMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/flappybird/ShapeMatrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/NumberClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/NumberClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/SortBubble.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/SortBubble.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/VisioMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/VisioMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/matrix.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out.log" beforeDir="false" afterPath="$PROJECT_DIR$/out.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/8_Games_jar/8.Games.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/8_Games_jar/8.Games.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/Painter/Cell.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/Painter/Cell.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/Painter/PaintForGameSprite.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/Painter/PaintForGameSprite.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/flappybird/Bird.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/flappybird/Bird.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/flappybird/FlappyBirdGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/flappybird/FlappyBirdGame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/flappybird/GameObjectManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/flappybird/GameObjectManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/flappybird/ShapeMatrix.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/8.Games/com/javarush/games/flappybird/ShapeMatrix.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,17 +74,18 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.javarush.games.racer.road" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.javarush.games.flappybird" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\intellijSandbox\JavaRushTasks" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.javarush.games.SortVisio" />
+      <recent name="com.javarush.games.flappybird" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.javarush.games.racer.road" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.PaintForGameSprite">
+  <component name="RunManager" selected="Application.Sorts">
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
       <option name="TESTING_TYPE" value="0" />
@@ -328,6 +321,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Minesweeper Game" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.javarush.games.minesweeper.MinesweeperGame" />
+      <module name="8.Games" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MoonLanderGame" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.javarush.games.moonlander.MoonLanderGame" />
       <module name="8.Games" />
@@ -365,15 +365,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpaceInvadersGame" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="com.javarush.games.spaceinvaders.SpaceInvadersGame" />
+    <configuration name="Sorts" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.javarush.games.SortVisio.VisioMain" />
       <module name="8.Games" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.javarush.games.minesweeper.MinesweeperGame" />
+    <configuration name="SpaceInvadersGame" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.javarush.games.spaceinvaders.SpaceInvadersGame" />
       <module name="8.Games" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -459,13 +459,14 @@
     </configuration>
     <list>
       <item itemvalue="Application.FlappyBirdGame" />
+      <item itemvalue="Application.Minesweeper Game" />
       <item itemvalue="Application.MoonLanderGame" />
       <item itemvalue="Application.NightmareRealm" />
       <item itemvalue="Application.PaintForGameSprite" />
       <item itemvalue="Application.RacerGame" />
       <item itemvalue="Application.SnakeGame" />
+      <item itemvalue="Application.Sorts" />
       <item itemvalue="Application.SpaceInvadersGame" />
-      <item itemvalue="Application.Unnamed" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -507,14 +508,26 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1064" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1599279263304">
+    <state x="760" y="175" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599316003188">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1064" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1599279263304" />
+    <state x="760" y="175" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599316003188" />
+    <state x="1064" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1599402024151">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1064" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1599402024151" />
+    <state x="1035" y="322" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1599315983523">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1035" y="322" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599315983523" />
     <state x="250" y="256" width="752" height="528" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1595593467058">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="250" y="256" width="752" height="528" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595593467058" />
+    <state x="1057" y="389" width="433" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1599381909946">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1057" y="389" width="433" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1599381909946" />
     <state x="804" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1599204423902">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -523,38 +536,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="967" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1595593538289" />
-    <state width="1181" height="240" key="GridCell.Tab.0.bottom" timestamp="1599311562313">
+    <state width="1247" height="256" key="GridCell.Tab.0.bottom" timestamp="1599404049991">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1181" height="240" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599311562313" />
-    <state width="1181" height="240" key="GridCell.Tab.0.center" timestamp="1599311562313">
+    <state width="1247" height="256" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599404049991" />
+    <state width="1247" height="256" key="GridCell.Tab.0.center" timestamp="1599404049990">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1181" height="240" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599311562313" />
-    <state width="1181" height="240" key="GridCell.Tab.0.left" timestamp="1599311562313">
+    <state width="1247" height="256" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599404049990" />
+    <state width="1247" height="256" key="GridCell.Tab.0.left" timestamp="1599404049990">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1181" height="240" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599311562312" />
-    <state width="1181" height="240" key="GridCell.Tab.0.right" timestamp="1599311562313">
+    <state width="1247" height="256" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599404049990" />
+    <state width="1247" height="256" key="GridCell.Tab.0.right" timestamp="1599404049991">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1181" height="240" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599311562313" />
-    <state width="1181" height="317" key="GridCell.Tab.1.bottom" timestamp="1599299728635">
+    <state width="1247" height="256" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599404049991" />
+    <state width="1181" height="317" key="GridCell.Tab.1.bottom" timestamp="1599319375327">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1181" height="317" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599299728635" />
-    <state width="1181" height="317" key="GridCell.Tab.1.center" timestamp="1599299728635">
+    <state width="1181" height="317" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599319375327" />
+    <state width="1181" height="317" key="GridCell.Tab.1.center" timestamp="1599319375327">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1181" height="317" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599299728635" />
-    <state width="1181" height="317" key="GridCell.Tab.1.left" timestamp="1599299728635">
+    <state width="1181" height="317" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599319375327" />
+    <state width="1181" height="317" key="GridCell.Tab.1.left" timestamp="1599319375327">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1181" height="317" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599299728635" />
-    <state width="1181" height="317" key="GridCell.Tab.1.right" timestamp="1599299728635">
+    <state width="1181" height="317" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599319375327" />
+    <state width="1181" height="317" key="GridCell.Tab.1.right" timestamp="1599319375327">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1181" height="317" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599299728635" />
+    <state width="1181" height="317" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599319375327" />
     <state x="672" y="130" key="new project wizard" timestamp="1595593558301">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -563,6 +576,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1102" y="277" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599202477961" />
+    <state x="936" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1599395458441">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="936" y="229" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1599395458441" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

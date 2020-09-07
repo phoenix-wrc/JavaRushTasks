@@ -9,26 +9,26 @@ import java.util.List;
 public class VisioMain extends Game {
 	public static final int WIDTH = 100, HEIGHT = 100;
 	private List<NumberClass> numbers = new ArrayList<>();
-	SortBubble bubble;
+	SortBubble2 bubble;
 	private boolean isEnd;
 
 
 	private void createGame() {
 		initializeObject();
 		drawField();
-		setTurnTimer(5);//подбирается в ручную((
+		setTurnTimer(100);//подбирается в ручную((
 		drawScene();
 	}
 
 	public void initializeObject() {
 		for (int i = 0; i <= WIDTH; i++) {
-			numbers.add(new NumberClass(i, 0, i));
+			numbers.add(new NumberClass(i, 0, i + 1));
 		}
 		Collections.shuffle(numbers);
 		for (int i = 0; i <= WIDTH; i++) {
 			numbers.get(i).x = i;
 		}
-		bubble = new SortBubble(numbers);
+		bubble = new SortBubble2(numbers);
 		isEnd = false;
 	}
 
@@ -43,6 +43,7 @@ public class VisioMain extends Game {
 	@Override
 	public void onTurn(int t)    {
 		drawScene();
+		//step();
 		try {
 			bubble.step();
 		} catch (InterruptedException e) {
@@ -51,19 +52,36 @@ public class VisioMain extends Game {
 	}
 
 	public void step() {
-		if(!isEnd) {
-			try {
-				bubble.step();
-			} catch (InterruptedException e) {
-				e.printStackTrace();
+		for(int i = 1 ; i < numbers.size(); i++)	{
+			for (int j = numbers.size() - 1; j >= i; j--) {
+				if (numbers.get(j - 1).num > numbers.get(j).num) {
+					System.out.println(i);
+					System.out.println(j);
+					NumberClass temp = numbers.get(j - 1);
+					numbers.set(j - 1, numbers.get(j));
+					numbers.set(j, temp);
+					for (int k = 0; k < numbers.size(); k++) {
+						numbers.get(k).x = k;
+					}
+				}
 			}
-			isEnd = true;
-		} else
-			return;
+		}
+//		if(!isEnd) {
+//			try {
+//				bubble.step();
+//			} catch (InterruptedException e) {
+//				e.printStackTrace();
+//			}
+//			isEnd = true;
+//		} else
+//			return;
 	}
 
 	private void drawScene() {
+		drawField();
 		numbers.forEach(num -> num.draw(this));
+
+//		bubble.draw(this);
 	}
 
 	@Override
