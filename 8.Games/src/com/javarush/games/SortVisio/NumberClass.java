@@ -13,17 +13,25 @@ public class NumberClass {
 	}
 
 	public boolean chosen;
-	Color basicColor = Color.YELLOW;
-	Color backColor = Color.DARKBLUE;
-	Color chosenColor = Color.RED;
+
+	public void setWritePlace() {
+		isWritePlace = x == num - 1;
+	}
+
+	public boolean isWritePlace;
+	Color basicColor = Color.BLACK;
+	Color backColor = Color.SKYBLUE;
+	Color chosenColor = Color.ORANGERED;
+	Color wrightColor = Color.DARKGREEN;
 
 	public NumberClass (int x, int y, int num)   {
 		this.x = x;
 		this.y = y;
-		this.num = num;
+		this.num = num + 1;
 		width = 1;
 		height = VisioMain.HEIGHT;
 		chosen = false;
+		isWritePlace = false;
 		matrix = getMatrix(num);
 	}
 
@@ -31,7 +39,7 @@ public class NumberClass {
 		int [][] matrix = new int[height][1];
 		for (int i = 0; i < width; i++) {
 			for (int j = 0; j < height; j++) {
-				if (j < num)
+				if (j > num)
 					matrix[j][i] = basicColor.ordinal();
 				else
 					matrix[j][i] = backColor.ordinal();
@@ -43,14 +51,28 @@ public class NumberClass {
 	public void draw(Game game)   {
 		for (int i = 0; i < width; i++) {
 			for (int j = 0; j < height; j++) {
-				if(!chosen)
-					game.setCellColor(x + i, y + j,
-						Color.values()[matrix[j][i]]);
-				else
-					game.setCellColor(x + i, y + j,
-							chosenColor);
+				if(chosen) {
+					if (j <= height - num)
+						game.setCellColor(x + i, y - j - 1, chosenColor);
+					else
+						game.setCellColor(x + i, y - j - 1, backColor);
+				} else if (isWritePlace){
+					if (j <= height - num)
+						game.setCellColor(x + i, y - j - 1, wrightColor);
+					else
+						game.setCellColor(x + i, y - j - 1, backColor);
+				} else {
+					if (j <= height - num)
+						game.setCellColor(x + i, y - j - 1, basicColor);
+					else
+						game.setCellColor(x + i, y - j - 1, backColor);
+				}
 			}
 		}
+	}
+
+	public void setChosen(boolean b) {
+		chosen = b;
 	}
 }
 

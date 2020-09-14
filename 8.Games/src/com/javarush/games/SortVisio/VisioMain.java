@@ -9,32 +9,38 @@ import java.util.List;
 public class VisioMain extends Game {
 	public static final int WIDTH = 100, HEIGHT = 100;
 	private List<NumberClass> numbers = new ArrayList<>();
-	SortBubble2 bubble;
+	ShakerSort3 bubble;
 	private boolean isEnd;
 
 
 	private void createGame() {
 		initializeObject();
 		drawField();
-		setTurnTimer(100);//подбирается в ручную((
+		setTurnTimer(35);//подбирается в ручную((
 		drawScene();
 	}
 
-	public void initializeObject() {
-		for (int i = 0; i <= WIDTH; i++) {
-			numbers.add(new NumberClass(i, 0, i + 1));
+	private List<NumberClass> initializeNumbers() {
+		numbers = new ArrayList<>();
+		for (int i = 0; i < WIDTH; i++) {
+			numbers.add(new NumberClass(i, 100, i));
 		}
 		Collections.shuffle(numbers);
-		for (int i = 0; i <= WIDTH; i++) {
+		return numbers;
+	}
+
+	public void initializeObject() {
+		numbers = initializeNumbers();
+		for (int i = 0; i < WIDTH; i++) {
 			numbers.get(i).x = i;
 		}
-		bubble = new SortBubble2(numbers);
+		bubble = new ShakerSort3(numbers);
 		isEnd = false;
 	}
 
 	private void drawField() {
 		for (int i = 0; i < WIDTH; i++) {
-			for (int j = 0; j < HEIGHT-6; j++) {
+			for (int j = 0; j < HEIGHT; j++) {
 				setCellColor(i, j, Color.SKYBLUE);
 			}
 		}
@@ -42,12 +48,18 @@ public class VisioMain extends Game {
 
 	@Override
 	public void onTurn(int t)    {
+		numbers.forEach(num -> num.setWritePlace());
 		drawScene();
-		//step();
-		try {
+		if (bubble == null)
+			bubble = new ShakerSort3(initializeNumbers());
+		else{
 			bubble.step();
-		} catch (InterruptedException e) {
-			e.printStackTrace();
+			setScore(bubble.score);
+		}
+		if(bubble.isEnd) {
+			System.out.println(bubble.score);
+			bubble = null;
+
 		}
 	}
 
@@ -78,10 +90,7 @@ public class VisioMain extends Game {
 	}
 
 	private void drawScene() {
-		drawField();
 		numbers.forEach(num -> num.draw(this));
-
-//		bubble.draw(this);
 	}
 
 	@Override

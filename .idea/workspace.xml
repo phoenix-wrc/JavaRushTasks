@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a9c2848-0864-419d-ba1c-a0669c6ee00f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/SortBubble2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/SortBubble2Clean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/ShakerSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/ShakerSort2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/ShakerSort3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/SortBubble3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/NumberClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/NumberClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/SortBubble.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/SortBubble.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/SortBubble2.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/SortBubble2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/VisioMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/VisioMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out.log" beforeDir="false" afterPath="$PROJECT_DIR$/out.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/8_Games_jar/8.Games.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/8_Games_jar/8.Games.jar" afterDir="false" />
     </list>
@@ -74,15 +75,15 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\intellijSandbox\JavaRushTasks" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.javarush.games.racer.road" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.javarush.games.SortVisio" />
       <recent name="com.javarush.games.flappybird" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.javarush.games.racer.road" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\intellijSandbox\JavaRushTasks" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Sorts">
@@ -459,14 +460,14 @@
     </configuration>
     <list>
       <item itemvalue="Application.FlappyBirdGame" />
-      <item itemvalue="Application.Minesweeper Game" />
       <item itemvalue="Application.MoonLanderGame" />
       <item itemvalue="Application.NightmareRealm" />
       <item itemvalue="Application.PaintForGameSprite" />
       <item itemvalue="Application.RacerGame" />
       <item itemvalue="Application.SnakeGame" />
-      <item itemvalue="Application.Sorts" />
       <item itemvalue="Application.SpaceInvadersGame" />
+      <item itemvalue="Application.Minesweeper Game" />
+      <item itemvalue="Application.Sorts" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -512,10 +513,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="760" y="175" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599316003188" />
-    <state x="1064" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1599402024151">
+    <state x="1064" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1599656588598">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1064" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1599402024151" />
+    <state x="1064" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1599656588598" />
     <state x="1035" y="322" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1599315983523">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -536,38 +537,42 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="967" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1595593538289" />
-    <state width="1247" height="256" key="GridCell.Tab.0.bottom" timestamp="1599404049991">
+    <state width="1309" height="259" key="GridCell.Tab.0.bottom" timestamp="1599745142582">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1247" height="256" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599404049991" />
-    <state width="1247" height="256" key="GridCell.Tab.0.center" timestamp="1599404049990">
+    <state width="1309" height="259" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599745142582" />
+    <state width="1309" height="259" key="GridCell.Tab.0.center" timestamp="1599745142582">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1247" height="256" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599404049990" />
-    <state width="1247" height="256" key="GridCell.Tab.0.left" timestamp="1599404049990">
+    <state width="1309" height="259" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599745142582" />
+    <state width="1309" height="259" key="GridCell.Tab.0.left" timestamp="1599745142582">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1247" height="256" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599404049990" />
-    <state width="1247" height="256" key="GridCell.Tab.0.right" timestamp="1599404049991">
+    <state width="1309" height="259" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599745142582" />
+    <state width="1309" height="259" key="GridCell.Tab.0.right" timestamp="1599745142582">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1247" height="256" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599404049991" />
-    <state width="1181" height="317" key="GridCell.Tab.1.bottom" timestamp="1599319375327">
+    <state width="1309" height="259" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599745142582" />
+    <state width="1247" height="319" key="GridCell.Tab.1.bottom" timestamp="1599495090298">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1181" height="317" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599319375327" />
-    <state width="1181" height="317" key="GridCell.Tab.1.center" timestamp="1599319375327">
+    <state width="1247" height="319" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599495090298" />
+    <state width="1247" height="319" key="GridCell.Tab.1.center" timestamp="1599495090287">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1181" height="317" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599319375327" />
-    <state width="1181" height="317" key="GridCell.Tab.1.left" timestamp="1599319375327">
+    <state width="1247" height="319" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599495090287" />
+    <state width="1247" height="319" key="GridCell.Tab.1.left" timestamp="1599495090286">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1181" height="317" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599319375327" />
-    <state width="1181" height="317" key="GridCell.Tab.1.right" timestamp="1599319375327">
+    <state width="1247" height="319" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599495090286" />
+    <state width="1247" height="319" key="GridCell.Tab.1.right" timestamp="1599495090298">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1181" height="317" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599319375327" />
+    <state width="1247" height="319" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599495090298" />
+    <state x="853" y="255" key="IDE.errors.dialog" timestamp="1599649273891">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="853" y="255" key="IDE.errors.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599649273891" />
     <state x="672" y="130" key="new project wizard" timestamp="1595593558301">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -576,6 +581,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1102" y="277" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599202477961" />
+    <state x="929" y="242" key="run.anything.popup" timestamp="1599536768488">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="929" y="242" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1599536768488" />
     <state x="936" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1599395458441">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
