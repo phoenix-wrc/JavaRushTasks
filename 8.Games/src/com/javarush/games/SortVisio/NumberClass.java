@@ -53,19 +53,19 @@ public class NumberClass {
 			for (int j = 0; j < height; j++) {
 				if(chosen) {
 					if (j <= height - num)
-						game.setCellColor(x + i, y - j - 1, chosenColor);
+						game.setCellColor(x + i, y - j , chosenColor);
 					else
-						game.setCellColor(x + i, y - j - 1, backColor);
+						game.setCellColor(x + i, y - j , backColor);
 				} else if (isWritePlace){
 					if (j <= height - num)
-						game.setCellColor(x + i, y - j - 1, wrightColor);
+						game.setCellColor(x + i, y - j , wrightColor);
 					else
-						game.setCellColor(x + i, y - j - 1, backColor);
+						game.setCellColor(x + i, y - j , backColor);
 				} else {
 					if (j <= height - num)
-						game.setCellColor(x + i, y - j - 1, basicColor);
+						game.setCellColor(x + i, y - j , basicColor);
 					else
-						game.setCellColor(x + i, y - j - 1, backColor);
+						game.setCellColor(x + i, y - j , backColor);
 				}
 			}
 		}

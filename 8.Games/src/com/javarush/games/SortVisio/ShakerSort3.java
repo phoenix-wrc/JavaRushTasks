@@ -74,7 +74,7 @@ public class ShakerSort3 {
 				swap2 = i;
 				isSwap = true;
 			}   else    {
-				offIndex = j;
+				offIndex = i;
 				isOffStep = true;
 			}
 			i--;
@@ -85,13 +85,13 @@ public class ShakerSort3 {
 	}
 
 	private void secondStep() {
-		if(j - 1 > 0)
+		if(j > 0)
 			numbers.get(j - 1).setChosen(false);
 		numbers.get(j).setChosen(true);
 		if ( j < right) {
 			if (numbers.get(j).num > numbers.get(j + 1).num) {
 				swap1 = j + 1;
-				swap2 = j ;
+				swap2 = j;
 				isSwap = true;
 			}   else    {
 				offIndex = j;

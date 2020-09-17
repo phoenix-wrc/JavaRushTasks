@@ -3,13 +3,17 @@ package com.javarush.games.SortVisio;
 import java.util.List;
 
 public class SortBubble3 {
-	private int swap1, swap2, i, j;
+	int swap1, swap2, i, j;
 	public int score;
 	NumberClass temp;
-	private List<NumberClass> numbers;
+	List<NumberClass> numbers;
 	int sizeNumbers;
+	int offIndex;
 	boolean isEnd;
-	private boolean isChose, isSwap, isSecondStep, isPassStep;
+	boolean isChose;
+	boolean isSwap;
+	boolean isSecondStep;
+	boolean isPassStep;
 
 	public SortBubble3(List<NumberClass> numbers) {
 		this.numbers = numbers;
@@ -55,18 +59,21 @@ public class SortBubble3 {
 		}
 	}
 
-	private void stepInternal() {
+	void stepInternal() {
 		if (j >= i) {
-			numbers.get(i-1).setChosen(false);
+
+			numbers.get(j - 1).setChosen(false);
 			if(j + 1 < sizeNumbers)
-				numbers.get(j+1).setChosen(false);
+				numbers.get(j + 1).setChosen(false);
 			numbers.get(j).setChosen(true);
+
 			if (numbers.get(j - 1).num > numbers.get(j).num) {
 				swap1 = j;
 				swap2 = j - 1;
 				isSwap = true;
 			} else {
 				isPassStep = true;
+				offIndex =  j;
 			}
 			j--;
 		}   else    {
@@ -77,11 +84,12 @@ public class SortBubble3 {
 		}
 	}
 
-	private void passStep() {
+	void passStep() {
+		numbers.get(offIndex).setChosen(false);
 		isPassStep = false;
 	}
 
-	private void swap() {
+	public void swap() {
 		numbers.get(swap2).setChosen(true);
 		numbers.get(swap1).setChosen(true);
 
@@ -93,7 +101,7 @@ public class SortBubble3 {
 		isSwap = false;
 	}
 
-	private void chose() {
+	public void chose() {
 		numbers.get(swap1).setChosen(false);
 		isChose = false;
 		score++;
