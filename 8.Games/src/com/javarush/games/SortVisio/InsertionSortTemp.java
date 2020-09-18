@@ -20,7 +20,6 @@ public class InsertionSortTemp {
 		}
 
 		System.out.println();
-		System.out.println(score);
 
 	}
 

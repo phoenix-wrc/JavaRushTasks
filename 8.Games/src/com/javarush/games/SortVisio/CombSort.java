@@ -25,12 +25,11 @@ public class CombSort extends SortBubble3{
 		if(isSwap || isChose || isSecondStep || isEnd ||
 				isPassStep || isBubbleSortOn)
 			super.step();
-		if(isInternalStep)
+		else if(isInternalStep)
 			secondStep();
 		else
 			firstLoop();
-		System.out.println(isSwap || isChose || isSecondStep || isEnd ||
-				isPassStep || isBubbleSortOn);
+		System.out.println(isEnd || isBubbleSortOn);
 	}
 
 	private void firstLoop() {
@@ -41,7 +40,7 @@ public class CombSort extends SortBubble3{
 			step = numbers.size() - 1;
 			//setEnd();
 			isBubbleSortOn = true;
-			System.out.println(isBubbleSortOn);
+			//System.out.println(isBubbleSortOn);
 		}
 	}
 
