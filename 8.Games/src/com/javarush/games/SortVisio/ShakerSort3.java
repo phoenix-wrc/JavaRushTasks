@@ -45,10 +45,6 @@ public class ShakerSort3 {
 			secondStep();
 		else
 			stepOuter();
-
-		for (int i = 0; i < sizeNumbers; i++) {
-			numbers.get(i).x = i;
-		}
 	}
 
 	private void stepOuter() {
@@ -66,9 +62,12 @@ public class ShakerSort3 {
 
 	private void firstStep() {
 		if (i > left) {
-			if(i + 1 < sizeNumbers)
+			if(i < sizeNumbers - 1)
 				numbers.get(i + 1).setChosen(false);
-			numbers.get(i).setChosen(true);
+			numbers.get(i).setChosen(false);
+			if(i + 1 < sizeNumbers)
+				numbers.get(i - 1).setChosen(true);
+				numbers.get(i).setChosen(true);
 			if (numbers.get(i - 1).num > numbers.get(i).num) {
 				swap1 = i - 1;
 				swap2 = i;
@@ -87,8 +86,11 @@ public class ShakerSort3 {
 	private void secondStep() {
 		if(j > 0)
 			numbers.get(j - 1).setChosen(false);
-		numbers.get(j).setChosen(true);
+		numbers.get(j).setChosen(false);
+
 		if ( j < right) {
+			numbers.get(j).setChosen(true);
+			numbers.get(j + 1).setChosen(true);
 			if (numbers.get(j).num > numbers.get(j + 1).num) {
 				swap1 = j + 1;
 				swap2 = j;
@@ -105,25 +107,29 @@ public class ShakerSort3 {
 	}
 
 	private void swap() {
-		numbers.get(swap2).setChosen(true);
-		numbers.get(swap1).setChosen(true);
-
 		temp = numbers.get(swap2);
 		numbers.set(swap2, numbers.get(swap1));
 		numbers.set(swap1, temp);
+
 		isChose = true;
 		isSwap = false;
 	}
 
 	private void chose() {
-		numbers.get(swap2).setChosen(false);
 		score++;
 		isChose = false;
+
+		for (int i = 0; i < sizeNumbers; i++) {
+			numbers.get(i).x = i;
+		}
 	}
 
 	private void offStep() {
-		numbers.get(offIndex).setChosen(false);
 		isOffStep = false;
+
+		for (int i = 0; i < sizeNumbers; i++) {
+			numbers.get(i).x = i;
+		}
 	}
 
 	public void setEnd() {

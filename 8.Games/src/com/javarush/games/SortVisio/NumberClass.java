@@ -19,9 +19,9 @@ public class NumberClass {
 	}
 
 	public boolean isWritePlace;
-	Color basicColor = Color.BLACK;
-	Color backColor = Color.SKYBLUE;
-	Color chosenColor = Color.ORANGERED;
+	Color basicColor = Color.DARKBLUE;//107
+	Color backColor = Color.WHITESMOKE;
+	Color chosenColor = Color.RED;
 	Color wrightColor = Color.DARKGREEN;
 
 	public NumberClass (int x, int y, int num)   {

@@ -73,7 +73,7 @@ public class InsertionSort {
 	}
 
 	private void secondStep() {
-		numbers.get(swap2).setChosen(false);
+		numbers.get(j + 1).setChosen(false);
 
 		if (j > 0 && numbers.get(j - 1).num >
 				temp.num) {
@@ -112,6 +112,10 @@ public class InsertionSort {
 	private void chose() {
 		score++;
 		isChose = false;
+
+		for (int i = 0; i < sizeNumbers; i++) {
+			numbers.get(i).x = i;
+		}
 	}
 
 	public void setEnd() {

@@ -43,10 +43,6 @@ public class SortBubble3 {
 			stepInternal();
 		else
 			stepOut();
-
-		for (int i = 0; i < sizeNumbers; i++) {
-			numbers.get(i).x = i;
-		}
 	}
 
 	public void stepOut() {
@@ -60,13 +56,13 @@ public class SortBubble3 {
 	}
 
 	void stepInternal() {
+		if(j < sizeNumbers - 1)
+			numbers.get(j + 1).setChosen(false);
+		numbers.get(j).setChosen(false);
 		if (j >= i) {
 
-			numbers.get(j - 1).setChosen(false);
-			if(j + 1 < sizeNumbers)
-				numbers.get(j + 1).setChosen(false);
 			numbers.get(j).setChosen(true);
-
+			numbers.get(j - 1).setChosen(true);
 			if (numbers.get(j - 1).num > numbers.get(j).num) {
 				swap1 = j;
 				swap2 = j - 1;
@@ -77,7 +73,6 @@ public class SortBubble3 {
 			}
 			j--;
 		}   else    {
-			numbers.get(j).setChosen(false);
 			j = sizeNumbers - 1;
 			i++;
 			isSecondStep = false;
@@ -85,13 +80,14 @@ public class SortBubble3 {
 	}
 
 	void passStep() {
-		numbers.get(offIndex).setChosen(false);
 		isPassStep = false;
+
+		for (int i = 0; i < sizeNumbers; i++) {
+			numbers.get(i).x = i;
+		}
 	}
 
 	public void swap() {
-		numbers.get(swap2).setChosen(true);
-		numbers.get(swap1).setChosen(true);
 
 		temp = numbers.get(swap2);
 		numbers.set(swap2, numbers.get(swap1));
@@ -102,9 +98,12 @@ public class SortBubble3 {
 	}
 
 	public void chose() {
-		numbers.get(swap1).setChosen(false);
 		isChose = false;
 		score++;
+
+		for (int i = 0; i < sizeNumbers; i++) {
+			numbers.get(i).x = i;
+		}
 	}
 
 	public void setEnd() {

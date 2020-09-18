@@ -136,7 +136,6 @@ public class CombSort2 {
 
 	void passStep() {
 		isPassStep = false;
-
 		for (int i = 0; i < sizeNumbers; i++) {
 			numbers.get(i).x = i;
 		}

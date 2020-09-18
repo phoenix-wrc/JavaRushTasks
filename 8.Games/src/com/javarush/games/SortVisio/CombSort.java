@@ -29,30 +29,29 @@ public class CombSort extends SortBubble3{
 			secondStep();
 		else
 			firstLoop();
-		System.out.println(isEnd || isBubbleSortOn);
 	}
 
 	private void firstLoop() {
-		if (step >= 2) {
+		if (step >= 1) {
 			isPassStep = true;
 			isInternalStep = true;
 		} else {
 			step = numbers.size() - 1;
-			//setEnd();
 			isBubbleSortOn = true;
-			//System.out.println(isBubbleSortOn);
+			setEnd();
 		}
 	}
 
 	void secondStep() {
-		if (l + step < numbers.size()) {
+		if(l > 0)
+			numbers.get(l - 1).setChosen(false);
+		numbers.get(tempIndex).setChosen(false);
 
+		if (l + step < sizeNumbers) {
 			tempIndex = (int) (l + step);
 
-			if (l > 0) numbers.get(l - 1).setChosen(false);
 			numbers.get(l).setChosen(true);
-
-			System.out.println(l);
+			numbers.get(tempIndex).setChosen(true);
 
 			if (numbers.get(l).num >
 					numbers.get(tempIndex).num) {
@@ -67,11 +66,6 @@ public class CombSort extends SortBubble3{
 			}
 			l++;
 		}   else    {
-
-			if (tempIndex < sizeNumbers)
-				numbers.get(tempIndex).setChosen(false);
-			numbers.get(l).setChosen(false);
-
 			l = 0;
 			step /= FACTOR;
 			isInternalStep = false;
