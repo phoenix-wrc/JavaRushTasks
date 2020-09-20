@@ -6,16 +6,16 @@ public class ShakerSort3 {
 	public int score;
 	private List<NumberClass> numbers;
 	int sizeNumbers;
+	NumberClass temp;
 	int i;
 	int j;
-	NumberClass temp;
 	int swap1;
 	int swap2;
+	boolean isEnd, isSwap, isChose, isPassStep;
 	int left;
 	int right;
-	boolean isEnd, isSwap, isSecondStep, isFirstStep, isChose;
+	boolean isSecondStep, isFirstStep;
 	private int offIndex;
-	private boolean isOffStep;
 
 	public ShakerSort3(List<NumberClass> numbers) {
 		this.numbers = numbers;
@@ -33,7 +33,7 @@ public class ShakerSort3 {
 	public void step() {
 		if(isEnd)
 			return;
-		else if(isOffStep)
+		else if(isPassStep)
 			offStep();
 		else if(isChose)
 			chose();
@@ -74,7 +74,7 @@ public class ShakerSort3 {
 				isSwap = true;
 			}   else    {
 				offIndex = i;
-				isOffStep = true;
+				isPassStep = true;
 			}
 			i--;
 		}   else    {
@@ -97,7 +97,7 @@ public class ShakerSort3 {
 				isSwap = true;
 			}   else    {
 				offIndex = j;
-				isOffStep = true;
+				isPassStep = true;
 			}
 			j++;
 		}   else    {
@@ -125,7 +125,7 @@ public class ShakerSort3 {
 	}
 
 	private void offStep() {
-		isOffStep = false;
+		isPassStep = false;
 
 		for (int i = 0; i < sizeNumbers; i++) {
 			numbers.get(i).x = i;
