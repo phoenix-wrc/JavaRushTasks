@@ -1,4 +1,4 @@
-package com.javarush.games.SortVisio;
+package com.javarush.games.SortVisio.TempSimple;
 
 import java.util.ArrayList;
 import java.util.Collections;

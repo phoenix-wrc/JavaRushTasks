@@ -1,6 +1,7 @@
-package com.javarush.games.SortVisio;
+package com.javarush.games.SortVisio.TempSimple;
 
 import com.javarush.engine.cell.Game;
+import com.javarush.games.SortVisio.NumberClass;
 
 import java.util.List;
 

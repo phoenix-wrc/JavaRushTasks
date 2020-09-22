@@ -1,9 +1,10 @@
-package com.javarush.games.SortVisio;
+package com.javarush.games.SortVisio.TempSimple;
 
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class SelectionSortTemp {
+public class InsertionSortTemp {
+
 	public static void main(String[] args) {
 		int[] numbers = numbersCast();
 		int score = 0;
@@ -13,7 +14,7 @@ public class SelectionSortTemp {
 		System.out.println();
 		System.out.println();
 
-		selectionSort(numbers, score);
+		insertionSort(numbers, score);
 		for (int i = 0; i < numbers.length; i++) {
 			System.out.print(numbers[i] + " ");
 		}
@@ -22,26 +23,20 @@ public class SelectionSortTemp {
 
 	}
 
-	private static void selectionSort(int[] numbers, int score) {
-		for (int i = numbers[0];
-		            i != numbers[numbers.length]; i++) {
-			int j;
-			if(i < numbers[numbers.length])
-				j = i;
-			else j = numbers[numbers.length];
+	private static void insertionSort(int[] numbers, int score) {
+		for (int i = 1; i < numbers.length; i++) {
 			int temp = numbers[i];
-			numbers[i] = numbers[j];
+			int j = i;
+			while (j > 0 && numbers[j - 1] > temp) {
+				numbers[j] = numbers[j - 1];
+				score++;
+				j--;
+			}
 			numbers[j] = temp;
 		}
-	System.out.println(score);
-	System.out.println();
+		System.out.println(score);
+		System.out.println();
 	}
-//	void SelectionSort(vector<int>& values) {
-//		for (auto i = values.begin(); i != values.end(); ++i) {
-//			auto j = std::min_element(i, values.end());
-//			swap(*i, *j);
-//		}
-//	}
 
 	private static int[] numbersCast() {
 		int[] temp = new int[100];

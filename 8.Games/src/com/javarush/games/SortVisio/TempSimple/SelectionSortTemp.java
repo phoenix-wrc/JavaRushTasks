@@ -1,10 +1,9 @@
-package com.javarush.games.SortVisio;
+package com.javarush.games.SortVisio.TempSimple;
 
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class InsertionSortTemp {
-
+public class SelectionSortTemp {
 	public static void main(String[] args) {
 		int[] numbers = numbersCast();
 		int score = 0;
@@ -14,7 +13,7 @@ public class InsertionSortTemp {
 		System.out.println();
 		System.out.println();
 
-		insertionSort(numbers, score);
+		selectionSort(numbers, score);
 		for (int i = 0; i < numbers.length; i++) {
 			System.out.print(numbers[i] + " ");
 		}
@@ -23,19 +22,27 @@ public class InsertionSortTemp {
 
 	}
 
-	private static void insertionSort(int[] numbers, int score) {
-		for (int i = 1; i < numbers.length; i++) {
-			int temp = numbers[i];
-			int j = i;
-			while (j > 0 && numbers[j - 1] > temp) {
-				numbers[j] = numbers[j - 1];
-				score++;
-				j--;
+	private static void selectionSort(int[] numbers, int score) {
+
+		for (int left = 0; left < numbers.length; left++) {
+			int minInd = left;
+			for (int i = left; i < numbers.length; i++) {
+				if (numbers[i] < numbers[minInd]) {
+					minInd = i;
+				}
 			}
-			numbers[j] = temp;
+			swap(numbers, left, minInd);
+			score++;
 		}
-		System.out.println(score);
-		System.out.println();
+	System.out.println(score);
+	System.out.println();
+	}
+
+	static void swap(int[] numbers,int i, int j) {
+		int temp = numbers[i];
+		numbers[i] = numbers[j];
+		numbers[j] = temp;
+		System.out.print('.');
 	}
 
 	private static int[] numbersCast() {

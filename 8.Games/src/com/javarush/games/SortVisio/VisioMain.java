@@ -9,21 +9,21 @@ import java.util.List;
 public class VisioMain extends Game {
 	public static final int WIDTH = 100, HEIGHT = 100;
 	private List<NumberClass> numbers = new ArrayList<>();
-	QuickSort bubble;
+	SelectionSort bubble;
 	private boolean isEnd;
 
 
 	private void createGame() {
 		initializeObject();
 		drawField();
-		setTurnTimer(250);
+		setTurnTimer(20);
 		drawScene();
 	}
 
 	private List<NumberClass> initializeNumbers() {
 		numbers = new ArrayList<>();
 		for (int i = 0; i < WIDTH; i++) {
-			numbers.add(new NumberClass(i, 99, i));
+			numbers.add(new NumberClass(i, WIDTH - 1, i));
 		}
 		Collections.shuffle(numbers);
 		return numbers;
@@ -34,7 +34,7 @@ public class VisioMain extends Game {
 		for (int i = 0; i < WIDTH; i++) {
 			numbers.get(i).x = i;
 		}
-		bubble = new QuickSort(numbers);
+		bubble = new SelectionSort(numbers);
 		isEnd = false;
 	}
 
@@ -51,19 +51,19 @@ public class VisioMain extends Game {
 		numbers.forEach(num -> num.setWritePlace());
 		drawScene();
 		if (bubble == null)
-			bubble = new QuickSort(initializeNumbers());
+			bubble = new SelectionSort(initializeNumbers());
 		else    {
 			bubble.step();
 			setScore(bubble.score);
 		}
-//		if(bubble.isEnd) {
-//			System.out.println(bubble.score);
-//			bubble = null;
-//		}
-//
-//		for (int i = 0; i < WIDTH; i++) {
-//			numbers.get(i).x = i;
-//		}
+		if(bubble.isEnd) {
+			System.out.println(bubble.score);
+			bubble = null;
+		}
+
+		for (int i = 0; i < WIDTH; i++) {
+			numbers.get(i).x = i;
+		}
 	}
 
 	public void step() {

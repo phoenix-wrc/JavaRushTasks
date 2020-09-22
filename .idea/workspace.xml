@@ -2,14 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a9c2848-0864-419d-ba1c-a0669c6ee00f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/QuickSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/QuickSortTemp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/QuickSortTemp2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/SelectionSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/SelectionSortTemp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/Sort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/ShakerSort3.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/ShakerSort3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/CombSortTemp.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/TempSimple/CombSortTemp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/InsertionSortTemp.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/TempSimple/InsertionSortTemp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/QuickSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/QuickSortTemp.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/TempSimple/QuickSortTemp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/QuickSortTemp2.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/TempSimple/QuickSortTemp2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/SelectionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/SelectionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/SelectionSortTemp.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/TempSimple/SelectionSortTemp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/Sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/Sort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/SortBubble2Clean.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/TempSimple/SortBubble2Clean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/VisioMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/VisioMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out.log" beforeDir="false" afterPath="$PROJECT_DIR$/out.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/8_Games_jar/8.Games.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/8_Games_jar/8.Games.jar" afterDir="false" />
@@ -73,7 +75,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -87,7 +89,7 @@
       <recent name="com.javarush.games.racer.road" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.tempSort">
+  <component name="RunManager" selected="Application.Sorts">
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
       <option name="TESTING_TYPE" value="0" />
@@ -388,7 +390,7 @@
       </method>
     </configuration>
     <configuration name="tempSort" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="com.javarush.games.SortVisio.QuickSortTemp2" />
+      <option name="MAIN_CLASS_NAME" value="com.javarush.games.SortVisio.TempSimple.SelectionSortTemp" />
       <module name="8.Games" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -518,22 +520,22 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="760" y="175" width="1092" height="738" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600573465657">
+    <state x="760" y="175" width="1092" height="738" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600766051937">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="760" y="175" width="1092" height="738" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600573465657" />
+    <state x="760" y="175" width="1092" height="738" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600766051937" />
     <state x="1064" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1600248356181">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1064" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1600248356181" />
-    <state x="1035" y="322" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1600432235742">
+    <state x="1035" y="322" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1600766049598">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1035" y="322" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600432235742" />
-    <state x="250" y="256" width="752" height="528" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1595593467058">
+    <state x="1035" y="322" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600766049598" />
+    <state x="250" y="256" width="752" height="528" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1600759608281">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="250" y="256" width="752" height="528" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595593467058" />
+    <state x="250" y="256" width="752" height="528" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600759608281" />
     <state x="1057" y="389" width="433" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1599381909946">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -546,22 +548,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="967" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1595593538289" />
-    <state width="1399" height="256" key="GridCell.Tab.0.bottom" timestamp="1600585551022">
+    <state width="1399" height="256" key="GridCell.Tab.0.bottom" timestamp="1600772222635">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1399" height="256" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600585551022" />
-    <state width="1399" height="256" key="GridCell.Tab.0.center" timestamp="1600585551022">
+    <state width="1399" height="256" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600772222635" />
+    <state width="1399" height="256" key="GridCell.Tab.0.center" timestamp="1600772222635">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1399" height="256" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600585551022" />
-    <state width="1399" height="256" key="GridCell.Tab.0.left" timestamp="1600585551013">
+    <state width="1399" height="256" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600772222635" />
+    <state width="1399" height="256" key="GridCell.Tab.0.left" timestamp="1600772222635">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1399" height="256" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600585551013" />
-    <state width="1399" height="256" key="GridCell.Tab.0.right" timestamp="1600585551022">
+    <state width="1399" height="256" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600772222635" />
+    <state width="1399" height="256" key="GridCell.Tab.0.right" timestamp="1600772222635">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1399" height="256" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600585551022" />
+    <state width="1399" height="256" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600772222635" />
     <state width="1247" height="319" key="GridCell.Tab.1.bottom" timestamp="1599495090298">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -582,6 +584,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="853" y="255" key="IDE.errors.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599649273891" />
+    <state x="699" y="165" key="SettingsEditor" timestamp="1600764343225">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="699" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1600764343225" />
     <state x="672" y="130" key="new project wizard" timestamp="1595593558301">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

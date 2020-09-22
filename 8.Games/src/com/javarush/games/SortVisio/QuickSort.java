@@ -23,7 +23,7 @@ public class QuickSort extends Sort {
 		r = new int[sizeNumbers * 2];
 		l = new int[sizeNumbers * 2];
 		q = new int[sizeNumbers * 2];
-		iPatition = 0;
+		this.i = 0;
 		i = 0;
 		j = 0;
 		xPartition = 0;
@@ -109,8 +109,8 @@ public class QuickSort extends Sort {
 	void partitionFirst() {
 		xPartition = numbers.get(rPartition).num;
 		less = lPartition;
-		iPatition = lPartition;
-		if (iPatition < rPartition) {
+		this.i = lPartition;
+		if (this.i < rPartition) {
 			isPartitionSecond = true;
 		}   else    {
 		swap2 = less;
@@ -120,13 +120,13 @@ public class QuickSort extends Sort {
 		}
 	}
 	void partitionSecond() {
-		if (numbers.get(iPatition).num <= xPartition) {
-			swap1 = iPatition;
+		if (numbers.get(this.i).num <= xPartition) {
+			swap1 = this.i;
 			swap2 = less;
 			isSwap = true;
 			less++;
 			isPartitionSecond = false;
 		}
-		iPatition++;
+		this.i++;
 	}
 }

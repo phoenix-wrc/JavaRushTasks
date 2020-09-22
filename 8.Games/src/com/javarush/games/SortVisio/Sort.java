@@ -7,7 +7,7 @@ public class Sort {
 	List<NumberClass> numbers;
 	int sizeNumbers;
 	NumberClass temp;
-	int iPatition;
+	int i;
 	int j;
 	int swap1;
 	int swap2;
@@ -19,7 +19,7 @@ public class Sort {
 		isEnd = numbers.isEmpty();
 		temp = null;
 		score = 0;
-		iPatition = 0;
+		i = 0;
 		j = 0;
 		swap1 = 0;
 		swap2 = 0;
@@ -58,7 +58,7 @@ public class Sort {
 		}
 	}
 
-	private void offStep() {
+	void offStep() {
 		isPassStep = false;
 
 		for (int i = 0; i < sizeNumbers; i++) {
