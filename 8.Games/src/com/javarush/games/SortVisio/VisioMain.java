@@ -16,7 +16,7 @@ public class VisioMain extends Game {
 	private void createGame() {
 		initializeObject();
 		drawField();
-		setTurnTimer(450);
+		setTurnTimer(200);
 		drawScene();
 	}
 

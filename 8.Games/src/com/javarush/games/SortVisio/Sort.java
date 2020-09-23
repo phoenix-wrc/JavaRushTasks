@@ -8,10 +8,8 @@ public class Sort {
 	int sizeNumbers;
 	NumberClass temp;
 	Sounds sounds;
-	int i;
-	int j;
-	int swap1;
-	int swap2;
+	String name, subName;
+	int i, j, swap1, swap2;
 	boolean isEnd, isSwap, isChose, isPassStep;
 
 	Sort(List<NumberClass> numbers) {
@@ -20,6 +18,8 @@ public class Sort {
 		sounds = new Sounds();
 		isEnd = numbers.isEmpty();
 		temp = null;
+		name = "";
+		subName = "";
 		score = 0;
 		i = 0;
 		j = 0;
@@ -56,7 +56,7 @@ public class Sort {
 		isChose = false;
 
 		sounds.playSwap();
-		
+
 		for (int i = 0; i < sizeNumbers; i++) {
 			numbers.get(i).x = i;
 		}

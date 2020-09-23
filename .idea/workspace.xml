@@ -2,29 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a9c2848-0864-419d-ba1c-a0669c6ee00f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/8.Games/src/Sound/ChooseSound/0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8.Games/src/Sound/ChooseSound/2.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8.Games/src/Sound/ChooseSound/3.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8.Games/src/Sound/ChooseSound/8.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8.Games/src/Sound/SwapSound/0.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8.Games/src/Sound/SwapSound/1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8.Games/src/Sound/SwapSound/10.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8.Games/src/Sound/SwapSound/2.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8.Games/src/Sound/SwapSound/3.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8.Games/src/Sound/SwapSound/4.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8.Games/src/Sound/SwapSound/5.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8.Games/src/Sound/SwapSound/6.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8.Games/src/Sound/SwapSound/7.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8.Games/src/Sound/SwapSound/8.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8.Games/src/Sound/SwapSound/9.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/Sound.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/Sounds.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/SelectionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/SelectionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Games/src/Sound/SwapSound/10.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Games/src/Sound/SwapSound/4.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Games/src/Sound/SwapSound/7.wav" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/Sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/Sort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/SortBubble3.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/SortBubble3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/VisioMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/VisioMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out.log" beforeDir="false" afterPath="$PROJECT_DIR$/out.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/8_Games_jar/8.Games.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/8_Games_jar/8.Games.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -567,22 +551,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="967" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1595593538289" />
-    <state width="1333" height="256" key="GridCell.Tab.0.bottom" timestamp="1600833864262">
+    <state width="1877" height="256" key="GridCell.Tab.0.bottom" timestamp="1600834949341">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1333" height="256" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600833864262" />
-    <state width="1333" height="256" key="GridCell.Tab.0.center" timestamp="1600833864261">
+    <state width="1877" height="256" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600834949341" />
+    <state width="1877" height="256" key="GridCell.Tab.0.center" timestamp="1600834949341">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1333" height="256" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600833864261" />
-    <state width="1333" height="256" key="GridCell.Tab.0.left" timestamp="1600833864261">
+    <state width="1877" height="256" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600834949341" />
+    <state width="1877" height="256" key="GridCell.Tab.0.left" timestamp="1600834949341">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1333" height="256" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600833864261" />
-    <state width="1333" height="256" key="GridCell.Tab.0.right" timestamp="1600833864262">
+    <state width="1877" height="256" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600834949341" />
+    <state width="1877" height="256" key="GridCell.Tab.0.right" timestamp="1600834949341">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1333" height="256" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600833864262" />
+    <state width="1877" height="256" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600834949341" />
     <state width="1247" height="319" key="GridCell.Tab.1.bottom" timestamp="1599495090298">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
