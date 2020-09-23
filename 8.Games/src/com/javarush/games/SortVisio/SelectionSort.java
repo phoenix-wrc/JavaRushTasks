@@ -42,7 +42,7 @@ public class SelectionSort extends Sort{
 		if(i < sizeNumbers) {
 			if(i > 0)
 				numbers.get(i - 1).setChosen(false);
-
+			sounds.playChose();
 			numbers.get(i).setChosen(true);
 			numbers.get(minInd).setChosen(true);
 
@@ -53,6 +53,7 @@ public class SelectionSort extends Sort{
 		}   else    {
 			numbers.get(sizeNumbers - 1).setChosen(false);
 			numbers.get(left).setChosen(true);
+			sounds.playChose();
 			swap1 = left;
 			swap2 = minInd;
 			isSwap = true;

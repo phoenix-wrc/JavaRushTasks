@@ -9,14 +9,14 @@ import java.util.List;
 public class VisioMain extends Game {
 	public static final int WIDTH = 100, HEIGHT = 100;
 	private List<NumberClass> numbers = new ArrayList<>();
-	SelectionSort bubble;
+	SortBubble3 bubble;
 	private boolean isEnd;
 
 
 	private void createGame() {
 		initializeObject();
 		drawField();
-		setTurnTimer(20);
+		setTurnTimer(450);
 		drawScene();
 	}
 
@@ -34,7 +34,7 @@ public class VisioMain extends Game {
 		for (int i = 0; i < WIDTH; i++) {
 			numbers.get(i).x = i;
 		}
-		bubble = new SelectionSort(numbers);
+		bubble = new SortBubble3(numbers);
 		isEnd = false;
 	}
 
@@ -51,7 +51,7 @@ public class VisioMain extends Game {
 		numbers.forEach(num -> num.setWritePlace());
 		drawScene();
 		if (bubble == null)
-			bubble = new SelectionSort(initializeNumbers());
+			bubble = new SortBubble3(initializeNumbers());
 		else    {
 			bubble.step();
 			setScore(bubble.score);

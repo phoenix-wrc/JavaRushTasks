@@ -14,10 +14,12 @@ public class SortBubble3 {
 	boolean isSwap;
 	boolean isSecondStep;
 	boolean isPassStep;
+	Sounds sounds;
 
 	public SortBubble3(List<NumberClass> numbers) {
 		this.numbers = numbers;
 		sizeNumbers = numbers.size();
+		sounds = new Sounds();
 		i = 1;
 		j = sizeNumbers - 1;
 		score = 0;
@@ -60,7 +62,7 @@ public class SortBubble3 {
 			numbers.get(j + 1).setChosen(false);
 		numbers.get(j).setChosen(false);
 		if (j >= i) {
-
+//			sounds.playChose();
 			numbers.get(j).setChosen(true);
 			numbers.get(j - 1).setChosen(true);
 			if (numbers.get(j - 1).num > numbers.get(j).num) {
@@ -82,13 +84,13 @@ public class SortBubble3 {
 	void passStep() {
 		isPassStep = false;
 
+		sounds.playChose();
 		for (int i = 0; i < sizeNumbers; i++) {
 			numbers.get(i).x = i;
 		}
 	}
 
 	public void swap() {
-
 		temp = numbers.get(swap2);
 		numbers.set(swap2, numbers.get(swap1));
 		numbers.set(swap1, temp);
@@ -100,6 +102,8 @@ public class SortBubble3 {
 	public void chose() {
 		isChose = false;
 		score++;
+
+		sounds.playSwap();
 
 		for (int i = 0; i < sizeNumbers; i++) {
 			numbers.get(i).x = i;

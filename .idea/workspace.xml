@@ -2,16 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a9c2848-0864-419d-ba1c-a0669c6ee00f" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/8.Games/src/Sound/ChooseSound/0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8.Games/src/Sound/ChooseSound/2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8.Games/src/Sound/ChooseSound/3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8.Games/src/Sound/ChooseSound/8.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8.Games/src/Sound/SwapSound/0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8.Games/src/Sound/SwapSound/1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8.Games/src/Sound/SwapSound/10.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8.Games/src/Sound/SwapSound/2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8.Games/src/Sound/SwapSound/3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8.Games/src/Sound/SwapSound/4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8.Games/src/Sound/SwapSound/5.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8.Games/src/Sound/SwapSound/6.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8.Games/src/Sound/SwapSound/7.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8.Games/src/Sound/SwapSound/8.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8.Games/src/Sound/SwapSound/9.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/Sound.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/Sounds.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/CombSortTemp.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/TempSimple/CombSortTemp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/InsertionSortTemp.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/TempSimple/InsertionSortTemp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/QuickSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/QuickSortTemp.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/TempSimple/QuickSortTemp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/QuickSortTemp2.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/TempSimple/QuickSortTemp2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/SelectionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/SelectionSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/SelectionSortTemp.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/TempSimple/SelectionSortTemp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/Sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/Sort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/SortBubble2Clean.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/TempSimple/SortBubble2Clean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/SortBubble3.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/SortBubble3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/VisioMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/VisioMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out.log" beforeDir="false" afterPath="$PROJECT_DIR$/out.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/8_Games_jar/8.Games.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/8_Games_jar/8.Games.jar" afterDir="false" />
@@ -78,15 +89,15 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\intellijSandbox\JavaRushTasks" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.javarush.games.racer.road" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.javarush.games.SortVisio" />
       <recent name="com.javarush.games.flappybird" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.javarush.games.racer.road" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\intellijSandbox\JavaRushTasks" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Sorts">
@@ -520,10 +531,14 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="760" y="175" width="1092" height="738" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600766051937">
+    <state x="760" y="175" width="1092" height="738" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600824715828">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="760" y="175" width="1092" height="738" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600766051937" />
+    <state x="760" y="175" width="1092" height="738" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600824715828" />
+    <state x="968" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600828509033">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="968" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1600828509033" />
     <state x="1064" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1600248356181">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -536,6 +551,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="250" y="256" width="752" height="528" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600759608281" />
+    <state x="1020" y="444" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1600828400587">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1020" y="444" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600828400587" />
     <state x="1057" y="389" width="433" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1599381909946">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -548,22 +567,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="967" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1595593538289" />
-    <state width="1399" height="256" key="GridCell.Tab.0.bottom" timestamp="1600772222635">
+    <state width="1333" height="256" key="GridCell.Tab.0.bottom" timestamp="1600833864262">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1399" height="256" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600772222635" />
-    <state width="1399" height="256" key="GridCell.Tab.0.center" timestamp="1600772222635">
+    <state width="1333" height="256" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600833864262" />
+    <state width="1333" height="256" key="GridCell.Tab.0.center" timestamp="1600833864261">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1399" height="256" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600772222635" />
-    <state width="1399" height="256" key="GridCell.Tab.0.left" timestamp="1600772222635">
+    <state width="1333" height="256" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600833864261" />
+    <state width="1333" height="256" key="GridCell.Tab.0.left" timestamp="1600833864261">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1399" height="256" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600772222635" />
-    <state width="1399" height="256" key="GridCell.Tab.0.right" timestamp="1600772222635">
+    <state width="1333" height="256" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600833864261" />
+    <state width="1333" height="256" key="GridCell.Tab.0.right" timestamp="1600833864262">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1399" height="256" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600772222635" />
+    <state width="1333" height="256" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600833864262" />
     <state width="1247" height="319" key="GridCell.Tab.1.bottom" timestamp="1599495090298">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -596,10 +615,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1102" y="277" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600433716147" />
-    <state x="929" y="242" key="run.anything.popup" timestamp="1600220186089">
+    <state x="929" y="242" key="run.anything.popup" timestamp="1600832732731">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="929" y="242" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1600220186089" />
+    <state x="929" y="242" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1600832732731" />
     <state x="936" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1599395458441">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -627,6 +646,11 @@
           <url>file://$PROJECT_DIR$/8.Games/src/com/javarush/games/spacetrucker/RacerGame.java</url>
           <line>73</line>
           <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/8.Games/src/com/javarush/games/SortVisio/Sound.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

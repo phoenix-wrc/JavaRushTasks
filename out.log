@@ -18391,3 +18391,35 @@ java.net.UnknownHostException: javarush.ru
 2020-09-22 18:39:10 INFO  ApacheHttpClient.refreshUserInfo(308) - User information received.
 2020-09-22 18:39:10 INFO  ApacheHttpClient.startGA(35) - GAService started.
 2020-09-22 18:39:10 INFO  AbstractRestApiClient.startService(71) - EventsService started.
+2020-09-22 23:27:49 INFO  PluginTasksProjectComponent.projectClosing(188) - ---------- Project closed ----------
+
+2020-09-23 11:27:47 INFO  PluginTasksProjectComponent.projectOpened(77) - ---------- Project opened ----------
+2020-09-23 11:27:47 INFO  PluginTasksProjectComponent.projectOpened(78) - ---------- Version 3.38 ----------
+
+2020-09-23 11:27:49 INFO  ApacheHttpClient.createAsyncHttpClient(143) - 1 proxies selected. Type: DIRECT
+2020-09-23 11:27:50 INFO  ApacheHttpClient.<init>(94) - ApacheHttpClient was successfully instantiated.
+2020-09-23 11:27:53 INFO  ApacheHttpClient.testConnection(202) - responseCode = 200
+2020-09-23 11:27:53 INFO  ApacheHttpClient.testConnection(217) - result = true
+2020-09-23 11:27:56 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(594) - Waiting for server response.
+2020-09-23 11:27:56 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(594) - Waiting for server response.
+2020-09-23 11:27:56 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(594) - Waiting for server response.
+2020-09-23 11:27:58 INFO  ApacheHttpClient.refreshUserInfo(302) - responseCode = 200
+2020-09-23 11:27:58 INFO  ApacheHttpClient.refreshUserInfo(308) - User information received.
+2020-09-23 11:27:58 INFO  ApacheHttpClient.startGA(35) - GAService started.
+2020-09-23 11:27:58 INFO  AbstractRestApiClient.startService(71) - EventsService started.
+2020-09-23 13:34:41 INFO  PluginTasksProjectComponent.projectClosing(188) - ---------- Project closed ----------
+
+2020-09-23 13:43:42 INFO  PluginTasksProjectComponent.projectOpened(77) - ---------- Project opened ----------
+2020-09-23 13:43:42 INFO  PluginTasksProjectComponent.projectOpened(78) - ---------- Version 3.38 ----------
+
+2020-09-23 13:43:42 INFO  ApacheHttpClient.createAsyncHttpClient(143) - 1 proxies selected. Type: DIRECT
+2020-09-23 13:43:42 INFO  ApacheHttpClient.<init>(94) - ApacheHttpClient was successfully instantiated.
+2020-09-23 13:43:44 INFO  ApacheHttpClient.testConnection(202) - responseCode = 200
+2020-09-23 13:43:44 INFO  ApacheHttpClient.testConnection(217) - result = true
+2020-09-23 13:43:50 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(594) - Waiting for server response.
+2020-09-23 13:43:50 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(594) - Waiting for server response.
+2020-09-23 13:43:50 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(594) - Waiting for server response.
+2020-09-23 13:43:51 INFO  ApacheHttpClient.refreshUserInfo(302) - responseCode = 200
+2020-09-23 13:43:51 INFO  ApacheHttpClient.refreshUserInfo(308) - User information received.
+2020-09-23 13:43:51 INFO  ApacheHttpClient.startGA(35) - GAService started.
+2020-09-23 13:43:51 INFO  AbstractRestApiClient.startService(71) - EventsService started.

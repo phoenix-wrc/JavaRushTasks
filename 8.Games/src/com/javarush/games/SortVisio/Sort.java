@@ -7,6 +7,7 @@ public class Sort {
 	List<NumberClass> numbers;
 	int sizeNumbers;
 	NumberClass temp;
+	Sounds sounds;
 	int i;
 	int j;
 	int swap1;
@@ -16,6 +17,7 @@ public class Sort {
 	Sort(List<NumberClass> numbers) {
 		this.numbers = numbers;
 		sizeNumbers = numbers.size();
+		sounds = new Sounds();
 		isEnd = numbers.isEmpty();
 		temp = null;
 		score = 0;
@@ -53,6 +55,8 @@ public class Sort {
 		score++;
 		isChose = false;
 
+		sounds.playSwap();
+		
 		for (int i = 0; i < sizeNumbers; i++) {
 			numbers.get(i).x = i;
 		}
